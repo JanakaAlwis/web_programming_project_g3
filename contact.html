@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="css/styles.css"> <!-- Link to the general styles -->
+    <link rel="stylesheet" href="css/contact.css"> <!-- Link to the contact page-specific styles -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.min.js"></script>
+</head>
+<body>
+    <header class="bg-dark text-white py-3">
+        <div class="container">
+            <h1>Contact</h1>
+        </div>
+    </header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <!-- Toggler for mobile view -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="templates.html">Templates</a></li>
+                    <li class="nav-item"><a class="nav-link" href="editor.html">Editor</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main class="container mt-4">
+        <h2>Get in Touch</h2>
+        <form id="contactForm" action="#" method="POST">
+            <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" name="name" placeholder="Enter your full name" required>
+                <div class="invalid-feedback">
+                    Please enter your name.
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email address" required>
+                <div class="invalid-feedback">
+                    Please enter a valid email address.
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" name="message" rows="4" placeholder="Write your message here..." required></textarea>
+                <div class="invalid-feedback">
+                    Please enter your message.
+                </div>
+            </div>
+            <button id="sendButton" type="button" class="btn btn-primary">Send</button> <!-- Always active button -->
+        </form>
+    </main>
+    <footer class="bg-dark text-white text-center py-3 mt-4">
+        <p>&copy; 2025 Portfolio Builder by JRAVICH. All Rights Reserved.</p>
+        <p>Follow us: 
+            <a href="#" class="text-white ms-2"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="text-white ms-2"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" class="text-white ms-2"><i class="bi bi-linkedin"></i></a>
+        </p>
+    </footer>
+
+    <!-- Modal for Message Sent -->
+    <div class="modal fade" id="messageModal" tabindex="-1" aria-labelledby="messageModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="messageModalLabel">Message Sent</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Your message has been successfully sent. Thank you for getting in touch!
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Include Bootstrap and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
+    <!-- jQuery Validation Script -->
+    <script>
+        $(document).ready(function () {
+            // Initialize jQuery validation
+            $("#contactForm").validate({
+                rules: {
+                    name: {
+                        required: true,
+                        maxlength: 100
+                    },
+                    email: {
+                        required: true,
+                        email: true,
+                        maxlength: 100
+                    },
+                    message: {
+                        required: true,
+                        maxlength: 500
+                    }
+                },
+                messages: {
+                    name: {
+                        required: "Please enter your name.",
+                        maxlength: "Your name cannot exceed 100 characters."
+                    },
+                    email: {
+                        required: "Please enter your email address.",
+                        email: "Please enter a valid email address.",
+                        maxlength: "Your email cannot exceed 100 characters."
+                    },
+                    message: {
+                        required: "Please enter your message.",
+                        maxlength: "Your message cannot exceed 500 characters."
+                    }
+                },
+                // Submit handler when form is valid
+                submitHandler: function (form) {
+                    // Clear form and show success modal
+                    form.reset();
+                    var messageModal = new bootstrap.Modal(document.getElementById('messageModal'));
+                    messageModal.show();
+
+                    // Remove validation state (so validation doesn't show again after successful submission)
+                    $('#contactForm').removeClass('was-validated');
+                }
+            });
+
+            // Event listener for the Send button
+            $('#sendButton').click(function () {
+                // Trigger form submission using the jQuery validation plugin
+                if ($("#contactForm").valid()) {
+                    $("#contactForm").submit();  // Trigger the submitHandler
+                } else {
+                    // Show validation feedback if there are validation errors
+                    $('#contactForm').addClass('was-validated');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

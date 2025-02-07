@@ -1,0 +1,61 @@
+/* Specific styles for the editor page */
+
+/* Editor Container */
+.editor-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #FEFFFF;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Editor Section */
+.editor-section {
+    border: 1px dashed #3AAFA9;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    background-color: #DEF2F1;
+    cursor: grab;
+}
+
+.editor-section:hover {
+    border-color: #2B7A78;
+}
+
+/* Editor Actions (Buttons) */
+.editor-actions {
+    text-align: right;
+}
+
+.btn-danger {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #FF4D4D;
+}
+
+.btn-danger:hover {
+    background-color: #FF1A1A;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .editor-container {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    .editor-section {
+        padding: 10px;
+    }
+
+    .btn-editor,
+    .btn-danger {
+        padding: 6px 12px;
+        font-size: 0.8rem;
+    }
+}

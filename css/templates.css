@@ -1,0 +1,25 @@
+.card.shadow-sm:hover {
+    transform: scale(1.05); /* Slightly enlarge the card */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Add a stronger shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+    z-index: 10; /* Bring the hovered card to the top */
+}
+
+/* Ensure carousel images are displayed at full width */
+#carouselTemplates .carousel-item img {
+    width: 100%;
+    height: auto; /* Keeps the aspect ratio intact */
+    object-fit: contain; /* Ensures the image is not cropped */
+}
+
+/* Make sure the carousel controls are properly visible */
+.carousel-control-prev, .carousel-control-next {
+    z-index: 5; /* Keeps the controls on top of the images */
+    width: 5%; /* Control button width */
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5); /* Dark background for arrows */
+    border-radius: 50%;
+    padding: 10px;
+}

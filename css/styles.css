@@ -1,0 +1,204 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Tahoma, sans-serif;
+    background-color: #DEF2F1;
+    color: #17252A;
+}
+
+/* Header */
+header {
+    background-color: #17252A;
+    color: #FEFFFF;
+    padding: 10px 0;
+    text-align: center;
+    font-family: Tahoma, sans-serif;
+    position: sticky; /* Make the header sticky */
+    top: 0; /* Stick to the top of the page */
+    z-index: 1000; /* Ensure the header stays above other content */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add some shadow for better visibility */
+}
+
+header p.lead {
+    font-weight: normal !important;
+    font-style: normal !important; /* Just to ensure it's not italicized */
+}
+
+header .container {
+    display: flex; /* Use flexbox to arrange items */
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Align items to left and right edges */
+    position: relative; /* Set position to relative for absolute centering */
+}
+
+header img {
+    margin-right: 15px; /* Right margin for logo spacing */
+}
+
+header h1 {
+    font-size: 2.4rem;
+    margin: 0;
+}
+
+/* Footer */
+footer {
+    background-color: #17252A;
+    color: #FEFFFF;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-family: Tahoma, sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    margin-bottom: 20px;
+    background-color: #2B7A78;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #3AAFA9;
+    padding: 10px 15px;
+    font-family: Tahoma, sans-serif;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #3AAFA9;
+}
+
+.navbar-light .navbar-nav .active .nav-link {
+    color: #3AAFA9;
+    font-weight: bold;
+}
+
+/* Main Content */
+main {
+    margin: 20px;
+    background-color: #F8FFFD;  /* Changed from #FEFFFF to a light gray */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Card Styles */
+.card {
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    background-color: #FEFFFF;
+}
+
+.card-img-top {
+    object-fit: cover;
+    height: 200px;
+}
+
+.card-body {
+    padding: 15px;
+}
+
+.card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #2B7A78;
+}
+
+.card.shadow-sm:hover {
+    transform: scale(1.05); /* Slightly enlarge the card */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Add a stronger shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+    z-index: 10; /* Bring the hovered card to the top */
+}
+
+/* Button Styles for .btn-primary */
+a.btn-primary,
+button.btn-primary {
+    background-color: #3AAFA9;
+    border: none;
+    padding: 10px 20px;
+    color: #FEFFFF;
+    font-weight: bold;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none; /* Remove underline for links */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+a.btn-primary:hover,
+button.btn-primary:hover {
+    background-color: #2B7A78;
+    color: #DEF2F1; /* Light text on hover */
+}
+
+a.btn-primary:active,
+button.btn-primary:active {
+    background-color: #17252A;
+    color: #FEFFFF; /* White text on active */
+}
+
+a.btn-primary:focus,
+button.btn-primary:focus {
+    outline: 2px solid #DEF2F1;
+    outline-offset: 2px;
+}
+
+/* Form Styles */
+form .form-label {
+    font-weight: bold;
+    color: #17252A;
+}
+
+form .form-control {
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 1rem;
+    background-color: #FEFFFF;
+    border: 1px solid #3AAFA9;
+}
+
+form button {
+    font-size: 1.1rem;
+}
+
+/* Carousel */
+.carousel-inner img {
+    object-fit: cover;
+    height: 400px;
+}
+
+.carousel-caption {
+    background: rgba(23, 37, 42, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    .navbar-nav .nav-link {
+        padding: 8px;
+    }
+
+    .card-img-top {
+        height: 150px;
+    }
+
+    .card-body {
+        padding: 10px;
+    }
+}

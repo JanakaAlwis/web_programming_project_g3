@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Editor</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/editor.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body>
+    <header class="bg-dark text-white py-3">
+        <div class="container">
+            <h1>Portfolio Editor</h1>
+        </div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="templates.html">Templates</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="editor.html">Editor</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="editor-container">
+        <h2>Edit Your Portfolio</h2>
+
+        <!-- Editor Section 1: Personal Info (No delete button)-->
+        <div class="editor-section" id="section1">
+            <h3>Personal Information</h3>
+            <form>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Full Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter your full name">
+                </div>
+                <div class="mb-3">
+                    <label for="bio" class="form-label">Biography</label>
+                    <textarea class="form-control" id="bio" rows="3" placeholder="Write a short biography"></textarea>
+                </div>
+            </form>
+            <div class="editor-actions">
+                <button class="btn btn-primary" type="button">Save Changes</button>
+            </div>
+        </div>
+
+        <!-- Editor Section 2: Skills (No delete button)-->
+        <div class="editor-section" id="section2">
+            <h3>Skills</h3>
+            <p>List your technical skills and proficiencies.</p>
+            <form>
+                <div class="mb-3">
+                    <label for="skills" class="form-label">Skills</label>
+                    <input type="text" class="form-control" id="skills" placeholder="Enter your skills, separated by commas">
+                </div>
+            </form>
+            <div class="editor-actions">
+                <button class="btn btn-primary" type="button">Save Changes</button>
+            </div>
+        </div>
+
+        <!-- Editor Section 3: Projects (With delete button)-->
+        <div class="editor-section" id="section3">
+            <h3>Projects</h3>
+            <p>Add your projects, including links to code repositories or live demos.</p>
+            <form>
+                <div class="mb-3">
+                    <label for="projectName" class="form-label">Project Name</label>
+                    <input type="text" class="form-control" id="projectName" placeholder="Enter project name">
+                </div>
+                <div class="mb-3">
+                    <label for="projectLink" class="form-label">Project Link</label>
+                    <input type="url" class="form-control" id="projectLink" placeholder="Enter project URL">
+                </div>
+            </form>
+            <div class="editor-actions">
+                <button class="btn btn-primary" type="button">Save Changes</button>
+                <button class="btn btn-danger delete-section" type="button">Delete Section</button>
+            </div>
+        </div>
+
+        <!-- Editor Section 4: Education (With delete button)-->
+        <div class="editor-section" id="section4">
+            <h3>Education</h3>
+            <form>
+                <div class="mb-3">
+                    <label for="degree" class="form-label">Degree</label>
+                    <input type="text" class="form-control" id="degree" placeholder="Enter your degree">
+                </div>
+                <div class="mb-3">
+                    <label for="university" class="form-label">University</label>
+                    <input type="text" class="form-control" id="university" placeholder="Enter your university name">
+                </div>
+                <div class="mb-3">
+                    <label for="graduationYear" class="form-label">Graduation Year</label>
+                    <input type="number" class="form-control" id="graduationYear" placeholder="Enter your graduation year">
+                </div>
+            </form>
+            <div class="editor-actions">
+                <button class="btn btn-primary" type="button">Save Changes</button>
+                <button class="btn btn-danger delete-section" type="button">Delete Section</button>
+            </div>
+        </div>
+
+        <!-- Editor Section 5: Work Experience (With delete button)-->
+        <div class="editor-section" id="section5">
+            <h3>Work Experience</h3>
+            <form>
+                <div class="mb-3">
+                    <label for="jobTitle" class="form-label">Job Title</label>
+                    <input type="text" class="form-control" id="jobTitle" placeholder="Enter your job title">
+                </div>
+                <div class="mb-3">
+                    <label for="company" class="form-label">Company</label>
+                    <input type="text" class="form-control" id="company" placeholder="Enter company name">
+                </div>
+                <div class="mb-3">
+                    <label for="yearsWorked" class="form-label">Years Worked</label>
+                    <input type="number" class="form-control" id="yearsWorked" placeholder="Enter number of years worked">
+                </div>
+                <div class="mb-3">
+                    <label for="jobDescription" class="form-label">Job Description</label>
+                    <textarea class="form-control" id="jobDescription" rows="3" placeholder="Describe your job responsibilities"></textarea>
+                </div>
+            </form>
+            <div class="editor-actions">
+                <button class="btn btn-primary" type="button">Save Changes</button>
+                <button class="btn btn-danger delete-section" type="button">Delete Section</button>
+            </div>
+        </div>
+
+        <!-- Editor Section 6: References (With delete button)-->
+        <div class="editor-section" id="section6">
+            <h3>References</h3>
+            <form>
+                <div class="mb-3">
+                    <label for="referenceName" class="form-label">Reference Name</label>
+                    <input type="text" class="form-control" id="referenceName" placeholder="Enter reference name">
+                </div>
+                <div class="mb-3">
+                    <label for="referenceContact" class="form-label">Reference Contact</label>
+                    <input type="text" class="form-control" id="referenceContact" placeholder="Enter reference contact details">
+                </div>
+                <div class="mb-3">
+                    <label for="referenceRelationship" class="form-label">Relationship</label>
+                    <input type="text" class="form-control" id="referenceRelationship" placeholder="Enter relationship to reference">
+                </div>
+            </form>
+            <div class="editor-actions">
+                <button class="btn btn-primary" type="button">Save Changes</button>
+                <button class="btn btn-danger delete-section" type="button">Delete Section</button>
+            </div>
+        </div>
+
+        <!-- Add New Section Button -->
+        <div class="editor-actions">
+            <button class="btn btn-primary" type="button" id="addNewSectionBtn" data-bs-toggle="modal" data-bs-target="#addSectionModal">Add New Section</button>
+        </div>
+    </main>
+
+    <!-- Modal for Selecting Section to Add -->
+    <div class="modal fade" id="addSectionModal" tabindex="-1" aria-labelledby="addSectionModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="addSectionModalLabel">Select Section to Add</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Please choose which section you want to add:</p>
+                    <div>
+                        <button type="button" class="btn btn-secondary" id="addPersonalInfoBtn">Personal Information</button>
+                        <button type="button" class="btn btn-secondary" id="addSkillsBtn">Skills</button>
+                        <button type="button" class="btn btn-secondary" id="addProjectsBtn">Projects</button>
+                        <button type="button" class="btn btn-secondary" id="addEducationBtn">Education</button>
+                        <button type="button" class="btn btn-secondary" id="addWorkExperienceBtn">Work Experience</button>
+                        <button type="button" class="btn btn-secondary" id="addReferencesBtn">References</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white text-center py-3 mt-4">
+        <p>&copy; 2025 Portfolio Builder by JRAVICH. All Rights Reserved.</p>
+        <p>Follow us: 
+            <a href="#" class="text-white ms-2"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="text-white ms-2"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" class="text-white ms-2"><i class="bi bi-linkedin"></i></a>
+        </p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+    <script>
+        // Handle deletion of non-mandatory sections
+        const deleteButtons = document.querySelectorAll('.delete-section');
+        deleteButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                const section = this.closest('.editor-section');
+                section.style.display = 'none'; // Hide the section
+            });
+        });
+
+        // Handle adding new sections
+        const addNewSectionBtn = document.getElementById('addNewSectionBtn');
+        const sections = {
+            "Projects": document.getElementById('section3'),
+            "Education": document.getElementById('section4'),
+            "Work Experience": document.getElementById('section5'),
+            "References": document.getElementById('section6'),
+        };
+
+        document.getElementById('addProjectsBtn').addEventListener('click', () => {
+            sections["Projects"].style.display = 'block';
+        });
+        document.getElementById('addEducationBtn').addEventListener('click', () => {
+            sections["Education"].style.display = 'block';
+        });
+        document.getElementById('addWorkExperienceBtn').addEventListener('click', () => {
+            sections["Work Experience"].style.display = 'block';
+        });
+        document.getElementById('addReferencesBtn').addEventListener('click', () => {
+            sections["References"].style.display = 'block';
+        });
+
+        // Close modal when a section is added
+        const modal = document.getElementById('addSectionModal');
+        modal.addEventListener('hidden.bs.modal', () => {
+            // Ensure all added sections are visible
+            Object.values(sections).forEach(section => {
+                section.style.display = 'block';
+            });
+        });
+    </script>
+</body>
+</html>
