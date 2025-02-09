@@ -18,7 +18,10 @@
                 <h1 class="mb-0">Student Portfolio Builder</h1>
                 <p class="lead mb-0">Create, customize, and showcase your achievements with ease!</p>
             </div>
-            <a href="#" class="text-white text-decoration-none ms-md-auto mt-3 mt-md-0" data-bs-toggle="modal" data-bs-target="#loginModal">LOG IN</a>
+            <div class="d-flex">
+                <a href="#" class="text-white text-decoration-none ms-3 mt-3 mt-md-0" data-bs-toggle="modal" data-bs-target="#loginModal">LOG IN</a>
+                <a href="#" class="text-white text-decoration-none ms-3 mt-3 mt-md-0" data-bs-toggle="modal" data-bs-target="#signupModal">SIGN UP</a>
+            </div>
         </div>
     </header>
 
@@ -129,6 +132,51 @@
                             <label class="form-check-label" for="rememberMe">Remember me</label>
                         </div>
                         <button type="submit" class="btn btn-primary w-100">Log In</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Sign Up -->
+    <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="signupModalLabel">Sign Up</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- Sign Up Form -->
+                    <form>
+                        <div class="mb-3">
+                            <label for="fullName" class="form-label">Full Name</label>
+                            <input type="text" class="form-control" id="fullName" placeholder="Enter your full name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="username" class="form-label">Username</label>
+                            <input type="text" class="form-control" id="username" placeholder="Choose a username" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="password" placeholder="Create a password" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="confirmPassword" class="form-label">Confirm Password</label>
+                            <input type="password" class="form-control" id="confirmPassword" placeholder="Confirm your password" required>
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="termsCheck" required>
+                            <label class="form-check-label" for="termsCheck">I agree to the <a href="#">Terms & Conditions</a></label>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Sign Up</button>
                     </form>
                 </div>
                 <div class="modal-footer">
