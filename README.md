@@ -92,7 +92,9 @@ List the database tables that are part of your project.
 - Table 2 (Created By): Table Name 
 - Table 3 (Created By): Table Name 
 
-> Include the ER Diagram of the database. 
+## ER Diagram of the Database
+
+![ERD_11022025](https://github.com/user-attachments/assets/f256a7d1-4a86-4077-ae5b-56a3ec2ad4db)
 
 ---
 
