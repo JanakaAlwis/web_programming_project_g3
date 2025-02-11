@@ -14,6 +14,7 @@
 # Web Programming Project - Team 3
 
 **JRAVICH - Student Portfolio Builder**
+
 JRAVICH is an innovative web platform designed to empower students to create, manage, and showcase their academic and professional portfolios. The platform offers a highly user-friendly interface, helping students present their skills, achievements, and career journey in a polished and visually appealing way.
 
 Key Features:
@@ -23,6 +24,7 @@ Key Features:
   easily accessible.
 - Signup: Students register by providing basic information, including their full name, email, username, password, and confirming their email address.
 - Login: Registered users can log in using their credentials for convenient access to their portfolio from any device.
+  
 **Upload and Organize Content:**
 - Students can upload a wide variety of content, including academic achievements, certifications, projects, essays, internship experiences, and other key documents related to their 
   academic and professional development.
@@ -33,6 +35,7 @@ Key Features:
   Education: Students can input their institution/ university name(s), field of study, qualification, graduation year(s) and description.
   Projects: Information about completed projects, including project names and URLs, can be added.
   References: Students can add details of references, including name, contact, and relationship.
+  
   **Portfolio Design Templates:**
 - Pre-Designed Templates: Students can choose from a variety of pre-designed portfolio templates to personalize the look and feel of their portfolio.
 - Responsive Design: The templates are mobile-friendly and adapt to all screen sizes, ensuring the portfolio looks great on both desktop and mobile devices.
@@ -40,6 +43,7 @@ Key Features:
   Color Schemes: Various color options, ranging from modern to classic, allowing students to match the design to their personal brand.
   Typography Styles: Different font choices to create a unique look for their portfolio.
 - Template Preview: Students can preview templates before applying them to their portfolios, ensuring the design perfectly aligns with their preferences.
+  
   **Generate a High-Quality PDF Portfolio:**
 - Downloadable PDF Portfolio: Students can generate a professional, high-quality PDF version of their portfolio that can be shared with potential employers, academic advisors, or 
   mentors.
