@@ -25,9 +25,12 @@
             <p class="lead mb-0"><?php echo $headerSubtitle ?? 'Create, customize, and showcase your achievements with ease!'; ?></p>
         </div>
 
+        <!-- Show Log Out only if the page is home.php -->
         <?php if ($pageTitle == "Home") : ?>
             <div class="d-flex">
-                <a href="#" class="text-white text-decoration-none ms-3 mt-3 mt-md-0" data-bs-toggle="modal" data-bs-target="#loginModal">LOG OUT</a>
+                <a href="#" data-bs-toggle="modal" data-bs-target="#logoutModal">
+                    <img src="images/logout-icon.png" alt="Logout" width="40" height="40" class="ms-3 mt-3 mt-md-0" style="cursor: pointer;">
+                </a>
             </div>
         <?php endif; ?>
     </div>
@@ -52,3 +55,22 @@
     </div>
 </nav>
 <?php endif; ?>
+
+<!-- Logout Confirmation Modal -->
+<div class="modal fade" id="logoutModal" tabindex="-1" aria-labelledby="logoutModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header bg-danger text-white">
+                <h5 class="modal-title" id="logoutModalLabel">Confirm Logout from Jravich</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Are you sure you want to log out from JRAVICH system?</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                <a href="logout.php" class="btn btn-danger">Log Out</a>
+            </div>
+        </div>
+    </div>
+</div>
