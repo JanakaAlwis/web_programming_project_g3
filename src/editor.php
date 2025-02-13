@@ -1,40 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Editor</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/editor.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-</head>
-<body>
-    <header class="bg-dark text-white py-3">
-        <div class="container">
-            <h1>Portfolio Editor</h1>
-        </div>
-    </header>
+<?php
+$pageTitle = "Editor";
+$metaDescription = "Customize your portfolio with an easy-to-use editor. Modify text, images, and layout.";
+$headerTitle = "Portfolio Editor";
+$headerSubtitle = "";
+$extraCSS = '<link rel="stylesheet" href="css/editor.css">';
+include 'header.php';
+?>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="templates.html">Templates</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="editor.html">Editor</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <main class="editor-container">
-        <h2>Edit Your Portfolio</h2>
+<main class="editor-container">
+    <h2>Edit Your Portfolio</h2>
 
 <!-- Personal Information -->
 <div class="editor-section">
@@ -126,14 +100,8 @@
         </div>
     </main>
 
-    <footer class="bg-dark text-white text-center py-3 mt-4">
-        <p>&copy; 2025 Portfolio Builder by JRAVICH. All Rights Reserved.</p>
-        <p>Follow us: 
-            <a href="#" class="text-white ms-2"><i class="bi bi-facebook"></i></a>
-            <a href="#" class="text-white ms-2"><i class="bi bi-twitter-x"></i></a>
-            <a href="#" class="text-white ms-2"><i class="bi bi-linkedin"></i></a>
-        </p>
-    </footer>
+    <!-- Include footer.php -->
+    <?php include 'footer.php'; ?>
 
     <script>
         // Add Experience Section
@@ -267,12 +235,16 @@
                         <input type="text" class="form-control" name="referanceName[]" required>
                     </div>
                     <div class="col-md-6">
+                        <label for="referanceEmail" class="form-label">Reference Email</label>
+                        <input type="email" class="form-control" name="referanceEmail[]" required>
+                    </div>
+                    <div class="col-md-6">
                         <label for="referanceContact" class="form-label">Reference Contact</label>
                         <input type="tel" class="form-control" name="referanceContact[]" required>
                     </div>
                     <div class="col-md-6">
-                        <label for="referanceRelationship" class="form-label">Relationship</label>
-                        <input type="text" class="form-control" name="referanceRelationship[]" required>
+                        <label for="referanceDesignation" class="form-label">Designation</label>
+                        <input type="text" class="form-control" name="referanceDesignation[]" required>
                     </div>
                     <div class="col-12 mt-2">
                         <button type="button" class="btn btn-danger" onclick="removeSection(this)">Remove Reference</button>

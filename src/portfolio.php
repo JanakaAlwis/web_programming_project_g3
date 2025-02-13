@@ -1,37 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/portfolio.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-</head>
-<body>
-    <header class="bg-dark text-white py-3">
-        <div class="container">
-            <h1>Portfolio</h1>
-        </div>
-    </header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container">
-            <!-- Toggler for mobile view -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="portfolio.html">Portfolio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="templates.html">Templates</a></li>
-                    <li class="nav-item"><a class="nav-link" href="editor.html">Editor</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+<?php
+$pageTitle = "Portfolio";
+$metaDescription = "View and manage your portfolio. Showcase your best work in a professional layout.";
+$headerTitle = "Portfolio";
+$headerSubtitle = "";
+$extraCSS = '<link rel="stylesheet" href="css/portfolio.css">';
+include 'header.php';
+?>
     <main class="container mt-4">
 
         <!-- Personal Information Section -->
@@ -110,14 +84,9 @@
         </section>
 
     </main>
-    <footer class="bg-dark text-white text-center py-3 mt-4">
-        <p>&copy; 2025 Portfolio Builder by JRAVICH. All Rights Reserved.</p>
-        <p>Follow us: 
-            <a href="#" class="text-white ms-2"><i class="bi bi-facebook"></i></a>
-            <a href="#" class="text-white ms-2"><i class="bi bi-twitter-x"></i></a>
-            <a href="#" class="text-white ms-2"><i class="bi bi-linkedin"></i></a>
-        </p>
-    </footer>
+    
+    <!-- Include footer.php -->
+    <?php include 'footer.php'; ?>
 
     <!-- Include Bootstrap and Popper.js -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
