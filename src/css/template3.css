@@ -1,0 +1,23 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(45deg, #ff416c, #ff4b2b);
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+h2 {
+    background: -webkit-linear-gradient(left, #ff9a9e, #fad0c4);
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
+button {
+    background-color: #fff;
+    color: #ff4b2b;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-weight: bold;
+}
+button:hover {
+    background-color: #ff4b2b;
+    color: white;
+}
