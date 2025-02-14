@@ -42,6 +42,41 @@
     background-color: #FF1A1A;
 }
 
+/* Tabs Styling */
+.nav-tabs .nav-link {
+    color: #DEF2F1; 
+    background-color: #17252A; 
+    border: 1px solid #2B7A78; 
+}
+
+/* Hover Effect */
+.nav-tabs .nav-link:hover {
+    color: #FEFFFF; 
+    background-color: #3AAFA9;
+    border-color: #3AAFA9;
+}
+
+/* Active Tab Style */
+.nav-tabs .nav-link.active {
+    color: #FEFFFF; 
+    background-color: #2B7A78;
+    border-color: #2B7A78;
+}
+
+/* Tab Content Padding */
+.tab-content {
+    padding-top: 20px;
+}
+
+/* Tab Content */
+.tab-content {
+    padding: 20px;
+    background-color: #FEFFFF;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .editor-container {
@@ -57,5 +92,10 @@
     .btn-danger {
         padding: 6px 12px;
         font-size: 0.8rem;
+    }
+
+    .nav-tabs .nav-link {
+        font-size: 0.9rem;
+        padding: 8px 12px;
     }
 }
