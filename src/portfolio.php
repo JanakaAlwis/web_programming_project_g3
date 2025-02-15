@@ -9,8 +9,8 @@ if (!isset($_SESSION['user_id'])) {
 
 $user_id = $_SESSION['user_id'];
 
-// Fetch user information
-$userQuery = $conn->prepare("SELECT * FROM users WHERE user_id = ?");
+// Fetch user information, including profile image
+$userQuery = $conn->prepare("SELECT user_id, first_name, last_name, email, phone, city, country, profile_image FROM users WHERE user_id = ?");
 if ($userQuery) {
     $userQuery->bind_param("i", $user_id);
     $userQuery->execute();
@@ -57,15 +57,25 @@ $pageTitle = "Portfolio";
 $metaDescription = "View and manage your portfolio. Showcase your best work in a professional layout.";
 $headerTitle = "Portfolio";
 $headerSubtitle = "";
-//var_dump($templateCSS);
-//$extraCSS = '<link rel="stylesheet" href="' . htmlspecialchars($templateCSS) . '">';
-//$extraCSS = '<link rel="stylesheet" href="css/template5.css">';
+
 $extraCSS = '<link rel="stylesheet" href="' . $templateCSS . '">';
 include 'header.php';
 ?>
 
 <div class="container mt-4">
     <header class="text-center">
+        <?php if (!empty($user['profile_image'])): ?>
+            <img src="display_image.php?user_id=<?= $user['user_id'] ?>" 
+                 alt="Profile Image" 
+                 class="rounded-circle mb-2" 
+                 width="120">
+        <?php else: ?>
+            <img src="images/default-profile.png" 
+                 alt="Default Profile" 
+                 class="rounded-circle mb-2" 
+                 width="120">
+        <?php endif; ?>
+
         <h2><?php echo htmlspecialchars($user['first_name'] . ' ' . $user['last_name']); ?></h2>
         <p><?php echo htmlspecialchars($user['email']); ?> | <?php echo htmlspecialchars($user['phone']); ?></p>
         <p><?php echo htmlspecialchars($user['city'] . ', ' . $user['country']); ?></p>

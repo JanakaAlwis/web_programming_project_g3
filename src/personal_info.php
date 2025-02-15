@@ -30,22 +30,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $phone       = $conn->real_escape_string($_POST['phone']);
     $linkedin_url = $conn->real_escape_string($_POST['linkedin_url']);
 
-    // Handle profile image upload
-    $profile_image = null;
-    if (!empty($_FILES['profile_image']['name'])) {
-        $targetDir = "uploads/";
-        $fileName = basename($_FILES["profile_image"]["name"]);
-        $targetFilePath = $targetDir . $fileName;
-
-        // Validate file type
-        $fileType = strtolower(pathinfo($targetFilePath, PATHINFO_EXTENSION));
-        $allowedTypes = ['jpg', 'jpeg', 'png', 'gif'];
-
-        if (in_array($fileType, $allowedTypes)) {
-            move_uploaded_file($_FILES["profile_image"]["tmp_name"], $targetFilePath);
-            $profile_image = $fileName;
-        }
-    }
+// Check if an image is uploaded
+$profile_image = null;
+if (!empty($_FILES['profile_image']['tmp_name'])) {
+    $imageData = file_get_contents($_FILES['profile_image']['tmp_name']); // Read binary data
+    $profile_image = $imageData; // Store binary content
+}
 
     // Update query
     $sql = "UPDATE users SET 
@@ -117,9 +107,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             <div class="col-md-6 mb-3">
                 <label for="profileImage" class="form-label">Profile Image</label>
                 <input type="file" class="form-control" id="profileImage" name="profile_image">
-                <?php if (!empty($userData['profile_image'])): ?>
-                    <img src="uploads/<?= htmlspecialchars($userData['profile_image']) ?>" alt="Profile Image" class="mt-2" width="100">
-                <?php endif; ?>
+                
+                <!-- Show the profile image -->
+                <img src="display_image.php?user_id=<?= $_SESSION['user_id'] ?>" 
+                    alt="Profile Image" 
+                    class="mt-2" 
+                    width="100">
             </div>
             <div class="col-md-6 mb-3">
                 <label for="linkedin" class="form-label">LinkedIn URL</label>
