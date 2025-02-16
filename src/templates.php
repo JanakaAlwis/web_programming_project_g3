@@ -1,6 +1,8 @@
 <?php
 require 'init.php';
 //session_start();
+
+// Page metadata
 $pageTitle = "Templates";
 $metaDescription = "Choose from a variety of professional templates to create your perfect portfolio.";
 $headerTitle = "Templates";
@@ -24,7 +26,7 @@ $templates = $templateQuery->fetch_all(MYSQLI_ASSOC);
         <?php foreach ($templates as $template): ?>
             <div class="col-md-4">
                 <div class="card shadow-sm">
-                    <img src="<?php echo $template['preview_image_path']; ?>" class="card-img-top" alt="<?php echo $template['template_name']; ?>">
+                    <img src="<?php echo $template['preview_image_path']; ?>" class="card-img-top" alt="<?php echo $template['template_name']; ?>" style="object-fit: cover; object-position: top; height: 200px;">>
                     <div class="card-body">
                         <h5 class="card-title"><?php echo $template['template_name']; ?></h5>
                         <p class="card-text"><?php echo $template['description']; ?></p>
