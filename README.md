@@ -159,18 +159,47 @@ The list of the forms that has been created as a part of the JRAVICH Student Por
 ### Form 1 (Janaka Alwis): Sign Up
 The sign up form collects basic information to create a user account, including the user's first name, last name, email address, and password.
 
-Link to the related code file (github) | Link to the form (shell.hamk.fi). | Validations Applied
+Link to the related code file (github) | Link to the form (shell.hamk.fi). | Validations Applied to First Name, Last Name, Email & Password.
 
 ### Form 2 (Janaka Alwis): Login
 The login form utilizes the email address and password provided during the sign-up process to authenticate the user and grant access to their account. This ensures secure access to the user's personalized profile and data.
 
-Link to the related code file (github) | Link to the form (shell.hamk.fi). | Validations Applied
+Link to the related code file (github) | Link to the form (shell.hamk.fi). | Validations Applied to Email & Password.
 
 ### Form 3 (Janaka Alwis): Personal Information
-The Personal Information form provides logged-in users with the ability to update various details associated with their account, such as their First Name, Last Name, City, Country, Zip Code, Phone Number, Profile Image, and LinkedIn URL. However, the Email Address cannot be modified because it serves as the unique identifier for the user account and is typically tied 
-to the user’s ID.
+The Personal Information form provides logged-in users with the ability to update various details associated with their account, such as their First Name, Last Name, City, Country, Zip Code, Phone Number, Profile Image, and LinkedIn URL. However, the Email Address cannot be modified because it serves as the unique identifier for the user account and is typically tied to the user’s ID.
 
-Link to the related code file (github) | Link to the form (shell.hamk.fi). | Validations Applied
+Link to the related code file (github) | Link to the form (shell.hamk.fi). | Validations Applied to First Name, Last Name, City, Country, Zip Code, Phone Number, Profile Image, and LinkedIn URL.
+
+### Form 4 (Janaka Alwis): Experience
+The Experience form provides logged-in users with the ability to update various details associated with their account, such as their Job Title, Employer, Job Description, Start Date, End Date & City. 
+
+Link to the related code file (github) | Link to the form (shell.hamk.fi). | Validations Applied to Title, Employer, Job Description, Start Date, End Date & City.
+ 
+### Form 5 (Vindya Nukulasooriya): Skills
+The Skills form provides logged-in users with the ability to update various skills details associated with their account, such as the skill name and skill level. 
+
+Link to the related code file (github) | Link to the form (shell.hamk.fi). | Validations Applied to skill name & skill level.
+
+### Form 6 (Charith Kaushalya): Education
+The Education form provides logged-in users with the ability to update various details associated with their education background, such as the Institution, Field of Study, Qualification, Graduation Year & Description. 
+
+Link to the related code file (github) | Link to the form (shell.hamk.fi). | Validations Applied to Institution, Field of Study, Qualification, Graduation Year & Description.
+
+### Form 7 (Charith Kaushalya): Projects
+The Projects form provides logged-in users with the ability to update various details associated with their completed projects, such as the Project Name, Project Link & Project Description. 
+
+Link to the related code file (github) | Link to the form (shell.hamk.fi). | Validations Applied to Project Name, Project Link & Project Description.
+
+### Form 8 (Ravidu Wijesekara): References
+The References form provides logged-in users with the ability to update their references details, such as the Reference Name, Email, Contact & Designation. 
+
+Link to the related code file (github) | Link to the form (shell.hamk.fi). | Validations Applied to Reference Name, Email, Contact & Designation.
+
+### Form 9 (Ravidu Wijesekara): Get in Touch
+The Get in Touch form provides logged-in users & guest users with the ability to send their contact information including Name, Email & Message. 
+
+Link to the related code file (github) | Link to the form (shell.hamk.fi). | Validations Applied to Name, Email & Message.
 
 ---
 
