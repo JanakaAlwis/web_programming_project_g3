@@ -138,7 +138,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             const section = event.target.closest('.education-item');
             const educationId = section.dataset.id;
 
-            const confirmation = confirm("Are you sure you want to delete this education?");
+            const confirmation = confirm("Are you sure you want to delete this added education?");
             if (confirmation) {
                 fetch('education.php', {
                     method: 'POST',
@@ -152,7 +152,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 .then(data => {
                     if (data.success) {
                         section.remove(); // Remove the section from the page
-                        alert("Education removed successfully!");
+                        alert("Added Education removed successfully!");
                     } else {
                         alert("Error removing education: " + data.error);
                     }
