@@ -163,11 +163,16 @@ List and describe any forms that have been created as part of your project. Incl
 
 ## Created Tables
 
-List any tables that you have created in the project work
+The list of the tables that has been created as a part of the JRAVICH Student Portfolio Builder Project are as follows:
 
-- Table 1 (Created By): Table Name | Link to the related code file (github) | Link to the table (shell.hamk.fi).
-- Table 2 (Created By): Table Name | Link to the related code file (github) | Link to the table (shell.hamk.fi).
-- Table 3 (Created By): Table Name | Link to the related code file (github) | Link to the table (shell.hamk.fi).
+- Table 1 (Janaka Alwis): users table | src/personal_info.php | Link to the table (shell.hamk.fi)
+- Table 2 (Janaka Alwis): experience table | src/experience.php | Link to the table (shell.hamk.fi)
+- Table 3 (Vindya Nukulasooriya): skills table | src/skills.php | Link to the table (shell.hamk.fi)
+- Table 4 (Vindya Nukulasooriya): master_templates table | src/templates.php | Link to the table (shell.hamk.fi)
+- Table 5 (Charith Kaushalya): education table | src/education.php | Link to the table (shell.hamk.fi)
+- Table 6 (Charith Kaushalya): projects table | src/projects.php | Link to the table (shell.hamk.fi)
+- Table 7 (Ravidu Wijesekara): user_references table | src/references.php | Link to the table (shell.hamk.fi)
+- Table 8 (Ravidu Wijesekara): contact_messages table | src/contact.php | Link to the table (shell.hamk.fi)
 
 ---
 
