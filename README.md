@@ -146,7 +146,8 @@ The list of the database tables that are part of the JRAVICH Student Portfolio B
 
 ## ER Diagram of the Database
 
-![Jravich_DB_ERD](https://github.com/user-attachments/assets/50823698-5846-4160-8c09-b4fed3e3694c)
+![Jravich_DB_ERD](https://github.com/user-attachments/assets/d2cc513a-91b1-460b-bad6-439a0e79610b)
+
 
 
 ## Created Forms
