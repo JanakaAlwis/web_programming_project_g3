@@ -2,15 +2,6 @@
 
 # Readme.md
 
-***Welcome to the task README!***
-
-- You are required to create ´Readme.md´ in your project directory to document your activities throughout the project's lifecycle. 
-- You will regularly update it to monitor the ongoing development of the project. 
-
-- You will start by outlining the planned features, task assignments to team members and document the evolving progress of your work. 
-
-- Below, you will find an example to help you get started. Feel free to customise it to match your specific requirements and needs.
-
 # Web Programming Project - Team 3
 
 **JRAVICH - Student Portfolio Builder**
@@ -20,14 +11,12 @@ JRAVICH is an innovative web platform designed to empower students to create, ma
 Key Features:
 
 **Sign Up/Login:**
-- Account Creation & Login: Students can create a secure account or log in to access and personalize their portfolio. The login process ensures that each user’s data is protected and 
-  easily accessible.
+- Account Creation & Login: Students can create a secure account or log in to access and personalize their portfolio. The login process ensures that each user’s data is protected and easily accessible.
 - Signup: Students register by providing basic information, including their full name, email, username, password, and confirming their email address.
 - Login: Registered users can log in using their credentials for convenient access to their portfolio from any device.
   
 **Upload and Organize Content:**
-- Students can upload a wide variety of content, including academic achievements, certifications, projects, essays, internship experiences, and other key documents related to their 
-  academic and professional development.
+- Students can upload a wide variety of content, including academic achievements, certifications, projects, skills, internship experiences, and other key details related to their academic and professional development.
 - Portfolio Sections:
   Personal Information: Students can input their first name, last name, city, country, ZIP code, phone, email address, LinkedIn URL, and can upload a profile image.
   Experience: Job title, employer, job description, years worked (start date & end date) and city  can be uploaded to highlight professional experience.
@@ -44,9 +33,8 @@ Key Features:
   Typography Styles: Different font choices to create a unique look for their portfolio.
 - Template Preview: Students can preview templates before applying them to their portfolios, ensuring the design perfectly aligns with their preferences.
   
-  **Generate a High-Quality PDF Portfolio:**
-- Downloadable PDF Portfolio: Students can generate a professional, high-quality PDF version of their portfolio that can be shared with potential employers, academic advisors, or 
-  mentors.
+**Generate a Professional Portfolio Display:**
+- Dsiplay Portfolio: Students can create a polished, high-quality portfolio to effectively showcase and share their academic achievements in a professional and impactful manner.
 
   **Other Potential Features (Optional):**
 - Mobile-Friendly Version: Ensure that the portfolio builder works smoothly on mobile devices, so students can access and modify their portfolio on the go.
@@ -62,25 +50,86 @@ Key Features:
 
 ## Features
 
-In this section, list and describe the features or functionality that you are working on. You can use checkboxes to track the progress of each feature.
+In this section, the features we are working on this website project are listed and their functionalities are described in detail. The checkboxes are used to track the progress of each feature.
 
-- [ ] Feature 1 (Full Name): Title of the feature. 
-- [ ] Feature 2 (Full Name): Title of the feature.
-- [ ] Feature 3 (Full Name): Title of the feature.
+- [ ] Sign up/ Login/ Log off (Janaka Alwils)  
+- [ ] Editor & Portfolio Building (Janaka Alwis, Charith Kaushalya, Ravidu Wijeseskara)
+- [ ] Templates Design & Creation (Charith Kaushalya, Vindya Nukulasooriya)
+- [ ] Portflio Display (Vindya Nukulasooriya)
+- [ ] Contacts Submission (Ravidu Wijesekara)
+- [ ] Preaparation of ReadMe Document (Vindya Nukulasooriya)
 
-> Add features as required. 
+### Sign up/ Login/ Log off
 
-### Feature 1
+Students can securely create an account or log in to personalize and access their portfolio. During signup, they provide essential information, including their full name, email, username, and password, while confirming their email address. Registered users can easily log in using their credentials, ensuring convenient access to their portfolio from any device while keeping their data secure.
 
-Include more detailed information about Feature 1 here. Provide links to related code files (github) & link to the feature (shell.hamk.fi) .
+[links to related code files (github)] 
+src/index.php
+src/personal_info.php
+src/logout.php
 
-### Feature 2
+[link to the feature (shell.hamk.fi)]
 
-Include more detailed information about Feature 2 here. Provide links to related code files (github) & link to the feature (shell.hamk.fi) .
 
-### Feature 3
+### Editor & Portfolio Building
 
-Include more detailed information about Feature 3 here. Provide links to related code files (github) & link to the feature (shell.hamk.fi) .
+Students can create a comprehensive portfolio by adding personal information such as name, contact details, and a profile image. They can highlight professional experience by listing job titles, employers, job descriptions, and duration of employment. The portfolio allows students to showcase their skills with proficiency levels, input educational background, including institutions, qualifications, and graduation years, and provide details of completed projects with project names and URLs. Additionally, students can include references, listing names, contact information, and their relationship to the individual. These sections help students build a well-rounded and professional portfolio.
+
+[links to related code files (github)] 
+src/css/editor.css
+src/editor.php
+src/css/portfolio.css
+src/portfolio.php
+
+[link to the feature (shell.hamk.fi)]
+
+### Templates Design & Creation
+
+Students can choose from a variety of pre-designed, mobile-friendly templates to personalize the look and feel of their portfolio. These templates offer customizable color schemes and typography styles, allowing students to align the design with their personal brand. Additionally, students can preview templates before applying them, ensuring the final design matches their preferences and looks great across all devices.
+
+[links to related code files (github)] 
+src/css/template1.css
+src/css/template2.css
+src/css/template3.css
+src/css/template4.css
+src/css/template5.css
+src/css/templates.css
+src/templates.php
+
+[link to the feature (shell.hamk.fi)]
+
+### Portflio Display
+
+When displaying the portfolio, the content is organized into clear, easy-to-navigate sections, ensuring a professional and user-friendly presentation. Each section, such as personal information, experience, skills, education, projects, and references, is neatly arranged with relevant details and can be accessed or edited as needed. This allows students to effectively highlight their achievements, making it easy for viewers to understand their qualifications and expertise. The layout is designed to be visually appealing and responsive, ensuring the portfolio looks great on both desktop and mobile devices.
+
+[links to related code files (github)] 
+src/css/portfolio.css
+src/portfolio.php
+
+[link to the feature (shell.hamk.fi)]
+
+### Contacts Submission
+
+In this contact.php page, students can submit their inquiries or feedback through a contact form. They are required to provide their name, email address, and a message. Upon successful submission, the form data is stored in a database, and a confirmation message is displayed to notify the user that their message has been sent. The form is also reset after submission, ensuring a smooth user experience. This functionality allows students to easily reach out for support or make inquiries related to their portfolio or other academic matters.
+
+[links to related code files (github)] 
+src/css/contact.css
+src/css/contact.css
+
+[link to the feature (shell.hamk.fi)]
+
+
+### Preaparation of ReadMe Document
+
+This README document outlines the purpose, features, and development progress of the JRAVICH Student Portfolio Builder project. It provides a detailed overview of key functionalities such as account creation, content upload, customizable portfolio templates, and the ability to display a professional portfolio. The document also tracks the project's progress by listing the features, database tables, created forms, and tables, with links to related code and live demos. It serves as a comprehensive guide for both developers and users, ensuring clarity and effective collaboration throughout the project's lifecycle.
+
+[links to related code files (github)] 
+README.md
+
+[link to the feature (shell.hamk.fi)]
+
+
+
 
 ---
 
@@ -121,4 +170,4 @@ List any tables that you have created in the project work
 
 
 
-> Feel free to customise this README template to suit your project's specific needs. Providing clear and organised documentation will help your team members understand the project's progress and tasks effectively. This document will have a significant impact on the grading. 
+

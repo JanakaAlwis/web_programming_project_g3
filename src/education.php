@@ -77,7 +77,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             </div>
                             <div class="col-md-6">
                                 <label for="gradYear" class="form-label">Graduation Year</label>
-                                <input type="number" class="form-control" name="gradYear[]" value="' . $row['grad_year'] . '" required>
+                                <input type="number" class="form-control" name="gradYear[]" value="' . $row['grad_year'] . '" min="1950" max="2050" required>
                             </div>
                             <div class="col-12">
                                 <label for="description" class="form-label">Description</label>
@@ -118,7 +118,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 </div>
                 <div class="col-md-6">
                     <label for="gradYear" class="form-label">Graduation Year</label>
-                    <input type="number" class="form-control" name="gradYear[]" required>
+                    <input type="number" class="form-control" name="gradYear[]" min="1950" max="2050" required>
                 </div>
                 <div class="col-12">
                     <label for="description" class="form-label">Description</label>

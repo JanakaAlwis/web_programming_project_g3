@@ -129,7 +129,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             const section = event.target.closest('.reference-item');
             const referenceId = section.dataset.id;
 
-            const confirmation = confirm("Are you sure you want to delete this reference?");
+            const confirmation = confirm("Are you sure you want to delete this given reference?");
             if (confirmation) {
                 fetch('references.php', {
                     method: 'POST',

@@ -7,8 +7,7 @@ body {
     padding: 0;
 }
 h2 {
-    background: -webkit-linear-gradient(left, #ff9a9e, #fad0c4);
-    -webkit-text-fill-color: transparent;
+    color: #fad0c4;
     font-weight: bold;
 }
 button {
