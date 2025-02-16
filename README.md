@@ -20,14 +20,12 @@ JRAVICH is an innovative web platform designed to empower students to create, ma
 Key Features:
 
 **Sign Up/Login:**
-- Account Creation & Login: Students can create a secure account or log in to access and personalize their portfolio. The login process ensures that each user’s data is protected and 
-  easily accessible.
+- Account Creation & Login: Students can create a secure account or log in to access and personalize their portfolio. The login process ensures that each user’s data is protected and easily accessible.
 - Signup: Students register by providing basic information, including their full name, email, username, password, and confirming their email address.
 - Login: Registered users can log in using their credentials for convenient access to their portfolio from any device.
   
 **Upload and Organize Content:**
-- Students can upload a wide variety of content, including academic achievements, certifications, projects, essays, internship experiences, and other key documents related to their 
-  academic and professional development.
+- Students can upload a wide variety of content, including academic achievements, certifications, projects, skills, internship experiences, and other key details related to their academic and professional development.
 - Portfolio Sections:
   Personal Information: Students can input their first name, last name, city, country, ZIP code, phone, email address, LinkedIn URL, and can upload a profile image.
   Experience: Job title, employer, job description, years worked (start date & end date) and city  can be uploaded to highlight professional experience.
@@ -44,9 +42,8 @@ Key Features:
   Typography Styles: Different font choices to create a unique look for their portfolio.
 - Template Preview: Students can preview templates before applying them to their portfolios, ensuring the design perfectly aligns with their preferences.
   
-  **Generate a High-Quality PDF Portfolio:**
-- Downloadable PDF Portfolio: Students can generate a professional, high-quality PDF version of their portfolio that can be shared with potential employers, academic advisors, or 
-  mentors.
+**Generate a Professional Portfolio Display:**
+- Dsiplay Portfolio: Students can create a polished, high-quality portfolio to effectively showcase and share their academic achievements in a professional and impactful manner.
 
   **Other Potential Features (Optional):**
 - Mobile-Friendly Version: Ensure that the portfolio builder works smoothly on mobile devices, so students can access and modify their portfolio on the go.
