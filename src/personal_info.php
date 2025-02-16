@@ -3,6 +3,10 @@ require 'init.php';
 //session_start();
 //include 'db.php'; // Database connection
 
+// Initialize message variables
+$successMessage = '';
+$errorMessage = '';
+
 // Check if user is logged in
 if (!isset($_SESSION['user_id'])) {
     header("Location: login.php");
@@ -63,17 +67,28 @@ if (!empty($_FILES['profile_image']['tmp_name'])) {
     }
 
     if ($stmt->execute()) {
-        echo json_encode(['success' => true, 'message' => 'Save Changes Successfully!']);
+        echo "<script>alert('Save Changes Successfully!'); window.location.href='personal_info.php';</script>";
+        exit();
     } else {
-        echo json_encode(['success' => false, 'message' => 'Error updating profile.']);
+        echo "<script>alert('Error updating profile.'); window.location.href='personal_info.php';</script>";
+        exit();
     }
-    exit(); // Ensure script execution stops here after response
 }
 ?>
 
 <!-- Personal Information Form -->
 <div class="editor-section">
     <h3>Personal Information</h3>
+    <!-- Display success or error message -->
+    <?php
+    if ($successMessage) {
+        echo "<div class='alert alert-success'>" . $successMessage . "</div>";
+    }
+
+    if ($errorMessage) {
+        echo "<div class='alert alert-danger'>" . $errorMessage . "</div>";
+    }
+    ?>
     <div id="success-message" style="display: none; color: green; margin-bottom: 10px;"></div>
     <form id="updateProfileForm" method="POST" enctype="multipart/form-data">
         <div class="row">
@@ -126,36 +141,29 @@ if (!empty($_FILES['profile_image']['tmp_name'])) {
     </form>
 </div>
 
+<!-- Add the script for handling the form submission without redirecting -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
-    $(document).ready(function () {
-        $('#updateProfileForm').on('submit', function (e) {
-            e.preventDefault(); // Prevent default form submission
+$(document).ready(function () {
+    $('#updateProfileForm').on('submit', function (e) {
+        e.preventDefault();  // Prevent page reload
 
-            var formData = new FormData(this); // Get form data
-            $.ajax({
-                url: '', // Submit to the same page
-                type: 'POST',
-                data: formData,
-                contentType: false, // Allow file uploads
-                processData: false, // Don't process data as query string
-                success: function(response) {
-                    var data = JSON.parse(response); // Parse JSON response
-                    if (data.success) {
-                        // Show success message
-                        $('#success-message').text(data.message).show();
-                        // Hide message after 5 seconds
-                        setTimeout(function() {
-                            $('#success-message').fadeOut();
-                        }, 5000);
-                    } else {
-                        alert(data.message); // Show error message if any
-                    }
-                },
-                error: function() {
-                    alert('There was an error updating your profile.');
-                }
-            });
+        var formData = new FormData(this);
+        $.ajax({
+            url: '',  // Same page
+            type: 'POST',
+            data: formData,
+            contentType: false,
+            processData: false,
+            success: function(response) {
+                // Display success message
+                $('#updateProfileForm').after('<div class="alert alert-success">Successfully Updated</div>');
+            },
+            error: function() {
+                // Display error message
+                $('#updateProfileForm').after('<div class="alert alert-danger">Error updating profile.</div>');
+            }
         });
     });
+});
 </script>
