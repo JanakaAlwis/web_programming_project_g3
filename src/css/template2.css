@@ -1,16 +1,15 @@
 body {
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(45deg, #4facfe, #00f2fe);
+    text-align: justify; 
+    background: linear-gradient(45deg, #00bcd4, #ffb6c1); 
     color: #fff;
     margin: 0;
     padding: 0;
 }
-
 h2 {
     color: #fbc2eb;
     font-weight: bold;
 }
-
 button {
     background-color: #00f2fe;
     color: #004aad;
@@ -21,9 +20,12 @@ button {
     transition: all 0.3s ease-in-out;
     cursor: pointer;
 }
-
 button:hover {
     background-color: #004aad;
     color: #fff;
     border: 2px solid #00f2fe;
+}
+button:active {
+    transform: scale(1.02); 
+    background: #3a2e1d; 
 }

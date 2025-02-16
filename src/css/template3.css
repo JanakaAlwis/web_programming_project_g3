@@ -1,6 +1,7 @@
 body {
     font-family: 'Montserrat', sans-serif;
-    background: linear-gradient(45deg, #ff416c, #ff4b2b);
+    text-align: justify; 
+    background: linear-gradient(to bottom, #ff416c, #ff9a9e 30%, #ff4b2b 100%);
     color: #fff;
     margin: 0;
     padding: 0;
@@ -20,4 +21,8 @@ button {
 button:hover {
     background-color: #ff4b2b;
     color: white;
+}
+button:active {
+    transform: scale(1.02); 
+    background: #3a2e1d; 
 }
