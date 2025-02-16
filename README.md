@@ -131,21 +131,23 @@ README.md
 
 
 
----
-
 ## Database Tables
 
-List the database tables that are part of your project. 
+The list of the database tables that are part of the JRAVICH Student Portfolio Builder Project are as follows: 
 
-- Table 1 (Created By): Table Name 
-- Table 2 (Created By): Table Name 
-- Table 3 (Created By): Table Name 
+- Table 1 (Janaka Alwis): users table
+- Table 2 (Janaka Alwis): experience table 
+- Table 3 (Vindya Nukulasooriya): skills table
+- Table 4 (Vindya Nukulasooriya): master_templates table
+- Table 5 (Charith Kaushalya): education table
+- Table 6 (Charith Kaushalya): projects table 
+- Table 7 (Ravidu Wijesekara): user_references table
+- Table 8 (Ravidu Wijesekara): contact_messages table
 
 ## ER Diagram of the Database
 
-![ERD_11022025](https://github.com/user-attachments/assets/f256a7d1-4a86-4077-ae5b-56a3ec2ad4db)
+![Jravich_DB_ERD](https://github.com/user-attachments/assets/50823698-5846-4160-8c09-b4fed3e3694c)
 
----
 
 ## Created Forms
 
