@@ -1,6 +1,7 @@
 <?php
-session_start();
-include 'db.php';
+require 'init.php';
+//session_start();
+//include 'db.php';
 
 // Check if user is logged in
 if (!isset($_SESSION['user_id'])) {
@@ -10,7 +11,7 @@ if (!isset($_SESSION['user_id'])) {
 $user_id = $_SESSION['user_id'];
 
 // Fetch user information, including profile image
-$userQuery = $conn->prepare("SELECT user_id, first_name, last_name, email, phone, city, country, profile_image FROM users WHERE user_id = ?");
+$userQuery = $conn->prepare("SELECT user_id, first_name, last_name, email, phone, city, country, zip_code, linkedin_url, profile_image FROM users WHERE user_id = ?");
 if ($userQuery) {
     $userQuery->bind_param("i", $user_id);
     $userQuery->execute();
@@ -53,17 +54,18 @@ if ($template_id) {
     }
 }
 
+// Page metadata
 $pageTitle = "Portfolio";
 $metaDescription = "View and manage your portfolio. Showcase your best work in a professional layout.";
 $headerTitle = "Portfolio";
 $headerSubtitle = "";
-
+$extraCSS = '<link rel="stylesheet" href="css/portfolio.css">';
 $extraCSS = '<link rel="stylesheet" href="' . $templateCSS . '">';
 include 'header.php';
 ?>
 
 <div class="container mt-4">
-    <header class="text-center">
+    <header class="text-center" style="background-color:rgb(40, 117, 115) !important;">
         <?php if (!empty($user['profile_image'])): ?>
             <img src="display_image.php?user_id=<?= $user['user_id'] ?>" 
                  alt="Profile Image" 
@@ -78,11 +80,12 @@ include 'header.php';
 
         <h2><?php echo htmlspecialchars($user['first_name'] . ' ' . $user['last_name']); ?></h2>
         <p><?php echo htmlspecialchars($user['email']); ?> | <?php echo htmlspecialchars($user['phone']); ?></p>
-        <p><?php echo htmlspecialchars($user['city'] . ', ' . $user['country']); ?></p>
+        <p><?php echo htmlspecialchars($user['city'] . ', ' . $user['country'].', ' . $user['zip_code']); ?></p>
+        <p><?php echo htmlspecialchars($user['linkedin_url']); ?></p>
     </header>
 
     <section>
-        <h4 class="section-title">Experience</h4>
+        <h3 class="section-title">Experience</h3>
         <?php while ($row = $experiences->fetch_assoc()): ?>
             <p><strong><?php echo htmlspecialchars($row['job_title']); ?></strong> at <?php echo htmlspecialchars($row['employer']); ?> (<?php echo htmlspecialchars($row['start_date']); ?> - <?php echo htmlspecialchars($row['end_date'] ?: 'Present'); ?>)</p>
             <p><?php echo htmlspecialchars($row['job_description']); ?></p>
@@ -90,7 +93,7 @@ include 'header.php';
     </section>
 
     <section>
-        <h4 class="section-title">Skills</h4>
+        <h3 class="section-title">Skills</h3>
         <ul>
             <?php while ($row = $skills->fetch_assoc()): ?>
                 <li><?php echo htmlspecialchars($row['skill_name'] . ' (' . $row['skill_level'] . ')'); ?></li>
@@ -99,7 +102,7 @@ include 'header.php';
     </section>
 
     <section>
-        <h4 class="section-title">Education</h4>
+        <h3 class="section-title">Education</h3>
         <?php while ($row = $education->fetch_assoc()): ?>
             <p><strong><?php echo htmlspecialchars($row['qualification']); ?></strong> in <?php echo htmlspecialchars($row['field_of_study']); ?> from <?php echo htmlspecialchars($row['institution']); ?> (<?php echo htmlspecialchars($row['grad_year']); ?>)</p>
             <p><?php echo htmlspecialchars($row['description']); ?></p>
@@ -107,7 +110,7 @@ include 'header.php';
     </section>
 
     <section>
-        <h4 class="section-title">Projects</h4>
+        <h3 class="section-title">Projects</h3>
         <?php while ($row = $projects->fetch_assoc()): ?>
             <p><strong><?php echo htmlspecialchars($row['project_name']); ?></strong></p>
             <p><?php echo htmlspecialchars($row['project_description']); ?></p>
@@ -118,7 +121,7 @@ include 'header.php';
     </section>
 
     <section>
-        <h4 class="section-title">References</h4>
+        <h3 class="section-title">References</h3>
         <?php while ($row = $references->fetch_assoc()): ?>
             <p><strong><?php echo htmlspecialchars($row['reference_name']); ?></strong> - <?php echo htmlspecialchars($row['designation']); ?></p>
             <p><?php echo htmlspecialchars($row['reference_email']); ?> | <?php echo htmlspecialchars($row['reference_contact']); ?></p>

@@ -1,5 +1,6 @@
 <?php
-include 'db.php';
+require 'init.php';
+//include 'db.php';
 
 if (isset($_GET['user_id'])) {
     $user_id = intval($_GET['user_id']);
@@ -20,4 +21,3 @@ if (isset($_GET['user_id'])) {
         readfile("default-profile.png");
     }
 }
-?>

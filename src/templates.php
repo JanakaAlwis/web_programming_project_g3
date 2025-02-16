@@ -1,5 +1,6 @@
 <?php
-session_start();
+require 'init.php';
+//session_start();
 $pageTitle = "Templates";
 $metaDescription = "Choose from a variety of professional templates to create your perfect portfolio.";
 $headerTitle = "Templates";

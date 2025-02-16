@@ -7,3 +7,5 @@
         <a href="#" class="text-white ms-2"><i class="bi bi-linkedin"></i></a>
     </p>
 </footer>
+
+<?php ob_end_flush(); ?>

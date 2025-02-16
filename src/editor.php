@@ -1,6 +1,6 @@
 <?php
-session_start();
-include 'db.php';
+require 'init.php';
+//include 'db.php';
 
 // Page metadata
 $pageTitle = "Editor";

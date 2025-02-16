@@ -16,4 +16,4 @@ if ($conn->connect_error) {
 // } else {
 //     echo "Database connected successfully";
 }
-?>
+

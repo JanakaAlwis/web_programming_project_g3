@@ -1,6 +1,7 @@
 <?php
-session_start();
-include 'db.php';
+require 'init.php';
+//session_start();
+//include 'db.php';
 
 $popupMessage = ""; // Initialize message
 

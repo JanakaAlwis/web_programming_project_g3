@@ -1,6 +1,7 @@
 <?php
-session_start();
-include 'db.php';
+require 'init.php';
+//session_start();
+//include 'db.php';
 
 // Check if user is logged in
 if (!isset($_SESSION['user_id'])) {

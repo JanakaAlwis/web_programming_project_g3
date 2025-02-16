@@ -1,5 +1,6 @@
 <?php
-require 'db.php';
+require 'init.php';
+//require 'db.php';
 
 // Page metadata
 $pageTitle = "Home";
