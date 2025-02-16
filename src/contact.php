@@ -26,7 +26,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 // Page metadata
 $pageTitle = "Contact";
-$metaDescription = "Get in touch with us for support and inquiries about the Portfolio Builder platform.";
+$metaDescription = "Get in touch with JRAVICH for support and inquiries about the Portfolio Builder platform.";
 $headerTitle = "Contact";
 $headerSubtitle = "";
 $extraCSS = '<link rel="stylesheet" href="css/contact.css">';
