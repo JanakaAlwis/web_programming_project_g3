@@ -57,7 +57,9 @@ In this section, the features we are working on this website project are listed 
 - [ ] Templates Design & Creation (Charith Kaushalya, Vindya Nukulasooriya)
 - [ ] Portflio Display (Vindya Nukulasooriya)
 - [ ] Contacts Submission (Ravidu Wijesekara)
-- [ ] Preaparation of ReadMe Document (Vindya Nukulasooriya)
+- [ ] Preaparation of ReadMe Document (Vindya Nukulasooriya, Ravidu Wijesekara, Charith Kaushalya)
+
+---
 
 ### Sign up/ Login/ Log off
 
@@ -129,42 +131,61 @@ README.md
 [link to the feature (shell.hamk.fi)]
 
 
-
-
 ---
 
 ## Database Tables
 
-List the database tables that are part of your project. 
+The list of the database tables that are part of the JRAVICH Student Portfolio Builder Project are as follows: 
 
-- Table 1 (Created By): Table Name 
-- Table 2 (Created By): Table Name 
-- Table 3 (Created By): Table Name 
+- Table 1 (Janaka Alwis): users table
+- Table 2 (Janaka Alwis): experience table 
+- Table 3 (Vindya Nukulasooriya): skills table
+- Table 4 (Vindya Nukulasooriya): master_templates table
+- Table 5 (Charith Kaushalya): education table
+- Table 6 (Charith Kaushalya): projects table 
+- Table 7 (Ravidu Wijesekara): user_references table
+- Table 8 (Ravidu Wijesekara): contact_messages table
 
 ## ER Diagram of the Database
 
-![ERD_11022025](https://github.com/user-attachments/assets/f256a7d1-4a86-4077-ae5b-56a3ec2ad4db)
+![Jravich_DB_ERD](https://github.com/user-attachments/assets/d2cc513a-91b1-460b-bad6-439a0e79610b)
 
 ---
 
 ## Created Forms
 
-List and describe any forms that have been created as part of your project. Include details about the purpose of each form and any validation logic.
+The list of the forms that has been created as a part of the JRAVICH Student Portfolio Builder Project are stated below and described.
 
-- Form 1 (Created By): Form Name: Link to the related code file (github) | Link to the form (shell.hamk.fi). | Validations Applied
-- Form 2: (Created By): Form Name: Link to the related code file (github) | Link to the form (shell.hamk.fi).  | Validations Applied
-- Form 3: (Created By): Form Name: Link to the related code file (github) | Link to the form (shell.hamk.fi).  | Validations Applied
+### Form 1 (Janaka Alwis): Sign Up
+The sign up form collects basic information to create a user account, including the user's first name, last name, email address, and password.
 
+Link to the related code file (github) | Link to the form (shell.hamk.fi). | Validations Applied
+
+### Form 2 (Janaka Alwis): Login
+The login form utilizes the email address and password provided during the sign-up process to authenticate the user and grant access to their account. This ensures secure access to the user's personalized profile and data.
+
+Link to the related code file (github) | Link to the form (shell.hamk.fi). | Validations Applied
+
+### Form 3 (Janaka Alwis): Personal Information
+The Personal Information form provides logged-in users with the ability to update various details associated with their account, such as their First Name, Last Name, City, Country, Zip Code, Phone Number, Profile Image, and LinkedIn URL. However, the Email Address cannot be modified because it serves as the unique identifier for the user account and is typically tied 
+to the user’s ID.
+
+Link to the related code file (github) | Link to the form (shell.hamk.fi). | Validations Applied
 
 ---
 
 ## Created Tables
 
-List any tables that you have created in the project work
+The list of the tables that has been created as a part of the JRAVICH Student Portfolio Builder Project are as follows:
 
-- Table 1 (Created By): Table Name | Link to the related code file (github) | Link to the table (shell.hamk.fi).
-- Table 2 (Created By): Table Name | Link to the related code file (github) | Link to the table (shell.hamk.fi).
-- Table 3 (Created By): Table Name | Link to the related code file (github) | Link to the table (shell.hamk.fi).
+- Table 1 (Janaka Alwis): users table | src/personal_info.php | Link to the table (shell.hamk.fi)
+- Table 2 (Janaka Alwis): experience table | src/experience.php | Link to the table (shell.hamk.fi)
+- Table 3 (Vindya Nukulasooriya): skills table | src/skills.php | Link to the table (shell.hamk.fi)
+- Table 4 (Vindya Nukulasooriya): master_templates table | src/templates.php | Link to the table (shell.hamk.fi)
+- Table 5 (Charith Kaushalya): education table | src/education.php | Link to the table (shell.hamk.fi)
+- Table 6 (Charith Kaushalya): projects table | src/projects.php | Link to the table (shell.hamk.fi)
+- Table 7 (Ravidu Wijesekara): user_references table | src/references.php | Link to the table (shell.hamk.fi)
+- Table 8 (Ravidu Wijesekara): contact_messages table | src/contact.php | Link to the table (shell.hamk.fi)
 
 ---
 
