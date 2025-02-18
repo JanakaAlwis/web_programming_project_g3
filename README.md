@@ -64,13 +64,20 @@ In this section, the featureshave worked on this website project are listed and 
 
 Feature 1 - Sign Up/ Login/ Log Off
 
-Students can securely create an account or log in to personalize and access their portfolio. 
+Students can securely create an account or log in to personalize and access their portfolio.
+
 Sign Up (Janaka Alwis)
-During signup, they provide essential information, including their first name and last name, email, username, and password, while confirming their email address. 
+
+During signup, they provide essential information, including their first name and last name, email, username, and password, while confirming their email address.
+
 Login (Janaka Alwis)
+
 Registered users can easily log in using their credentials, ensuring convenient access to their portfolio from any device while keeping their data secure.
+
 Log Off (Janaka Alwis)
+
 When users have finished accessing their session, they can log off to ensure their account remains secure.
+
 [links to related code files (github)] 
 src/index.php
 src/personal_info.php 
