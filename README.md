@@ -223,19 +223,19 @@ N/A
 The list of the database tables that are part of the JRAVICH Student Portfolio Builder Project are as follows: 
 
 - Table 1 (Janaka Alwis): users table
-- 
+  
 - Table 2 (Janaka Alwis): experience table
--  
-- Table 3 (Vindya Nukulasooriya): skills table
 - 
+- Table 3 (Vindya Nukulasooriya): skills table
+  
 - Table 4 (Vindya Nukulasooriya): master_templates table
 - 
 - Table 5 (Charith Kaushalya): education table
-- 
+  
 - Table 6 (Charith Kaushalya): projects table
-- 
+  
 - Table 7 (Ravidu Wijesekara): user_references table
-- 
+  
 - Table 8 (Ravidu Wijesekara): contact_messages table
 
 ## ER Diagram of the Database
@@ -472,7 +472,7 @@ Message - Required Field Validation applied.
 
 The list of the tables that has been created as a part of the JRAVICH Student Portfolio Builder Project are as follows:
 
-Table 1 (Janaka Alwis): users table 
+### Table 1 (Janaka Alwis): users table 
 
 Link to the related code file (github)
 
@@ -498,7 +498,7 @@ Link to the table (shell.hamk.fi)
 
 https://shell.hamk.fi/~amk1004093/web_programming_project_g3/src/
 
-Table 2 (Janaka Alwis): experience table 
+### Table 2 (Janaka Alwis): experience table 
 
 Link to the related code file (github)
 
@@ -522,8 +522,7 @@ Link to the table (shell.hamk.fi)
 
 https://shell.hamk.fi/~amk1004093/web_programming_project_g3/src/
 
-
-Table 3 (Vindya Nukulasooriya): skills table 
+### Table 3 (Vindya Nukulasooriya): skills table 
 
 Link to the related code file (github)
 
@@ -547,7 +546,7 @@ Link to the table (shell.hamk.fi)
 
 https://shell.hamk.fi/~amk1001863/web_programming_project_g3/src/
 
-Table 4 (Vindya Nukulasooriya): master_templates table
+### Table 4 (Vindya Nukulasooriya): master_templates table
 
 src/db.php
 
@@ -579,7 +578,7 @@ Link to the table (shell.hamk.fi)
 
 https://shell.hamk.fi/~amk1001863/web_programming_project_g3/src/
 
-Table 5 (Charith Kaushalya): education table 
+### Table 5 (Charith Kaushalya): education table 
 
 src/db.php
 
@@ -601,7 +600,7 @@ Link to the table (shell.hamk.fi)
 
 https://shell.hamk.fi/~amk1001864/web_programming_project_g3/src/
 
-Table 6 (Charith Kaushalya): projects table 
+### Table 6 (Charith Kaushalya): projects table 
 
 src/db.php
 
@@ -623,7 +622,7 @@ Link to the table (shell.hamk.fi)
 
 https://shell.hamk.fi/~amk1001864/web_programming_project_g3/src/
 
-Table 7 (Ravidu Wijesekara): user_references table
+### Table 7 (Ravidu Wijesekara): user_references table
 
 src/db.php
 
@@ -645,7 +644,7 @@ Link to the table (shell.hamk.fi)
 
 https://shell.hamk.fi/~amk1001933/web_programming_project_g3/src/
 
-Table 8 (Ravidu Wijesekara): contact_messages table 
+### Table 8 (Ravidu Wijesekara): contact_messages table 
 
 src/db.php
 
