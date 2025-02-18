@@ -97,6 +97,7 @@ Editor
 1. Personal Information (Janaka Alwis)
    
 Students can input their first name, last name, city, country, ZIP code, phone, email address, LinkedIn URL, and can upload a profile image.
+
 2. Experience (Janaka Alwis)
 
 Job title, employer, job description, years worked (start date & end date) and city can be uploaded to highlight professional experience. 
@@ -108,6 +109,7 @@ Students can list various skills with their proficiency level.
 4. Education (Charith Kaushalya)
    
 Students can input their institution/ university name(s), field of study, qualification, graduation year(s) and description. 
+
 5. Projects (Charith Kaushalya)
 
 Information about completed projects, including project names and URLs, can be added. 
@@ -121,15 +123,23 @@ Portfolio (Janaka Alwis, Vindya Nukulasooriya, Charith Kaushalya, Ravidu Wijesek
 Students can create a comprehensive portfolio by adding personal information such as name, contact details, and a profile image. They can highlight professional experience by listing job titles, employers, job descriptions, and duration of employment. The portfolio allows students to highlight their skills with proficiency levels, input educational background, including institutions, qualifications, and graduation years, and provide details of completed projects with project names and URLs. Additionally, students can include references, listing names, contact information, and their relationship to the individual. These sections help students build a well-rounded and professional portfolio.
 
 [links to related code files (github)] 
+
 src/css/editor.css 
+
 src/editor.php 
+
 src/css/portfolio.css 
+
 src/portfolio.php
 
 [link to the feature (shell.hamk.fi)]
+
 https://shell.hamk.fi/~amk1004093/web_programming_project_g3/src/ 
-https://shell.hamk.fi/~amk1001863/web_programming_project_g3/src/ 
+
+https://shell.hamk.fi/~amk1001863/web_programming_project_g3/src/
+
 https://shell.hamk.fi/~amk1001933/web_programming_project_g3/src/ 
+
 https://shell.hamk.fi/~amk1001864/web_programming_project_g3/src/
 
 
@@ -146,15 +156,23 @@ Students can choose from a variety of pre-designed, mobile-friendly templates to
 
 [links to related code files (github)] 
 src/css/template1.css 
+
 src/css/template2.css 
+
 src/css/template3.css 
+
 src/css/template4.css 
+
 src/css/template5.css 
+
 src/css/templates.css 
+
 src/templates.php
 
 [link to the feature (shell.hamk.fi)]
+
 https://shell.hamk.fi/~amk1001863/web_programming_project_g3/src/
+
 https://shell.hamk.fi/~amk1001864/web_programming_project_g3/src/
 
 
@@ -163,10 +181,13 @@ Feature 4 - Portfolio Display (Vindya Nukulasooriya)
 When displaying the portfolio, the content is organized into clear, easy-to-navigate sections, ensuring a professional and user-friendly presentation. Each section—such as personal information, experience, skills, education, projects, and references—is neatly arranged with relevant details, and users can access or edit them as needed. This allows students to effectively showcase their achievements, making it easy for viewers to understand their qualifications and expertise. The layout is customizable, with five different template options to choose from, and is designed to be visually appealing and responsive, ensuring the portfolio looks great on both desktop and mobile devices.
 
 [links to related code files (github)] 
+
 src/css/portfolio.css 
+
 src/portfolio.php
 
 [link to the feature (shell.hamk.fi)]
+
 https://shell.hamk.fi/~amk1001863/web_programming_project_g3/src/
 
 
@@ -175,9 +196,11 @@ Feature 5 - Contacts Submission (Ravidu Wijesekara)
 In this contact.php page, students can submit their inquiries or feedback through a contact form. They are required to provide their name, email address, and a message. Upon successful submission, the form data is stored in a database, and a confirmation message is displayed to notify the user that their message has been sent. The form is also reset after submission, ensuring a smooth user experience. This functionality allows students to easily reach out for support or make inquiries related to their portfolio or other academic matters.
 
 [links to related code files (github)] 
+
 src/css/contact.css 
 
 [link to the feature (shell.hamk.fi)]
+
 https://shell.hamk.fi/~amk1001933/web_programming_project_g3/src/
 
 
@@ -186,7 +209,9 @@ Feature 6 - Preparation of ReadMe Document (Vindya Nukulasooriya, Charith Kausha
 This README document outlines the purpose, features, and development progress of the JRAVICH Student Portfolio Builder project. It provides a detailed overview of key functionalities such as account creation, content upload, customizable portfolio templates, and the ability to display a professional portfolio. The document also tracks the project's progress by listing the features, database tables, created forms, and tables, with links to related code and live demos. It serves as a comprehensive guide for both developers and users, ensuring clarity and effective collaboration throughout the project's lifecycle.
 
 [links to related code files (github)] README.md
+
 [link to the feature (shell.hamk.fi)]
+
 N/A
 
 
@@ -198,12 +223,19 @@ N/A
 The list of the database tables that are part of the JRAVICH Student Portfolio Builder Project are as follows: 
 
 - Table 1 (Janaka Alwis): users table
-- Table 2 (Janaka Alwis): experience table 
+- 
+- Table 2 (Janaka Alwis): experience table
+-  
 - Table 3 (Vindya Nukulasooriya): skills table
+- 
 - Table 4 (Vindya Nukulasooriya): master_templates table
+- 
 - Table 5 (Charith Kaushalya): education table
-- Table 6 (Charith Kaushalya): projects table 
+- 
+- Table 6 (Charith Kaushalya): projects table
+- 
 - Table 7 (Ravidu Wijesekara): user_references table
+- 
 - Table 8 (Ravidu Wijesekara): contact_messages table
 
 ## ER Diagram of the Database
