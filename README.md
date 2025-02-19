@@ -4,7 +4,7 @@
 
 # Web Programming Project - Team 3
 
-***JRAVICH - Student Portfolio Builder***
+## JRAVICH - Student Portfolio Builder
 
 JRAVICH is an innovative web platform designed to empower students to create, manage, and showcase their academic and professional portfolios. The platform offers a highly user-friendly interface, helping students present their skills, achievements, and career journey in a polished and visually appealing way.
 
@@ -246,11 +246,11 @@ The list of the database tables that are part of the JRAVICH Student Portfolio B
 - Table 1 (Janaka Alwis): **users table**
   
 - Table 2 (Janaka Alwis): **experience table**
-- 
+  
 - Table 3 (Vindya Nukulasooriya): **skills table**
   
 - Table 4 (Vindya Nukulasooriya): **master_templates table**
-- 
+  
 - Table 5 (Charith Kaushalya): **education table**
   
 - Table 6 (Charith Kaushalya): **projects table**
