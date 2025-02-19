@@ -4,7 +4,7 @@
 
 # Web Programming Project - Team 3
 
-**JRAVICH - Student Portfolio Builder**
+***JRAVICH - Student Portfolio Builder***
 
 JRAVICH is an innovative web platform designed to empower students to create, manage, and showcase their academic and professional portfolios. The platform offers a highly user-friendly interface, helping students present their skills, achievements, and career journey in a polished and visually appealing way.
 
@@ -62,37 +62,46 @@ In this section, the featureshave worked on this website project are listed and 
 
 ---
 
-Feature 1 - Sign Up/ Login/ Log Off
+## Feature 1 - Sign Up/ Login/ Log Off
 
 Students can securely create an account or log in to personalize and access their portfolio.
 
-Sign Up (Janaka Alwis)
+**Sign Up** (Janaka Alwis)
 
 During signup, they provide essential information, including their first name and last name, email, username, and password, while confirming their email address.
 
-Login (Janaka Alwis)
+**Login** (Janaka Alwis)
 
 Registered users can easily log in using their credentials, ensuring convenient access to their portfolio from any device while keeping their data secure.
 
-Log Off (Janaka Alwis)
+**Log Off** (Janaka Alwis)
 
 When users have finished accessing their session, they can log off to ensure their account remains secure.
 
 [links to related code files (github)] 
+
 src/index.php
-src/personal_info.php 
-src/logout.php,
+
+src/personal_info.php
+
+src/logout.php
+
 src/home.php
 
 [link to the feature (shell.hamk.fi)]
+
+https://shell.hamk.fi/~amk1001863/web_programming_project_g3/src/
+
+https://shell.hamk.fi/~amk1001864/web_programming_project_g3/src/
+
+https://shell.hamk.fi/~amk1001933/web_programming_project_g3/src/ 
+
 https://shell.hamk.fi/~amk1004093/web_programming_project_g3/src/
 
 
+## Feature 2 - Editor & Portfolio Building
 
-Feature 2 - Editor & Portfolio Building
-
-
-Editor 
+**Editor** 
 
 1. Personal Information (Janaka Alwis)
    
@@ -118,7 +127,7 @@ Information about completed projects, including project names and URLs, can be a
 
 Students can add details of references, including name, contact, and relationship.
 
-Portfolio (Janaka Alwis, Vindya Nukulasooriya, Charith Kaushalya, Ravidu Wijesekara )
+**Portfolio** (Janaka Alwis, Vindya Nukulasooriya, Charith Kaushalya, Ravidu Wijesekara )
 
 Students can create a comprehensive portfolio by adding personal information such as name, contact details, and a profile image. They can highlight professional experience by listing job titles, employers, job descriptions, and duration of employment. The portfolio allows students to highlight their skills with proficiency levels, input educational background, including institutions, qualifications, and graduation years, and provide details of completed projects with project names and URLs. Additionally, students can include references, listing names, contact information, and their relationship to the individual. These sections help students build a well-rounded and professional portfolio.
 
@@ -134,27 +143,27 @@ src/portfolio.php
 
 [link to the feature (shell.hamk.fi)]
 
-https://shell.hamk.fi/~amk1004093/web_programming_project_g3/src/ 
-
 https://shell.hamk.fi/~amk1001863/web_programming_project_g3/src/
-
-https://shell.hamk.fi/~amk1001933/web_programming_project_g3/src/ 
 
 https://shell.hamk.fi/~amk1001864/web_programming_project_g3/src/
 
+https://shell.hamk.fi/~amk1001933/web_programming_project_g3/src/ 
+
+https://shell.hamk.fi/~amk1004093/web_programming_project_g3/src/ 
 
 
-Feature 3 - Templates Design & Templates Creation 
+## Feature 3 - Templates Design & Templates Creation 
 
-Templates Design (Charith Kaushalya)
+**Templates Design** (Charith Kaushalya)
 
 Providing students with the ability to preview a template before selecting it enhances their decision-making process by allowing them to make more informed choices. When students can see a preview, they are able to assess the layout, design, and structure of the template in relation to their specific needs or project goals.
 
-Templates Creation (Vindya Nukulasooriya)
+**Templates Creation** (Vindya Nukulasooriya)
 
 Students can choose from a variety of pre-designed, mobile-friendly templates to personalize the look and feel of their portfolio. These templates offer customizable colour schemes and typography styles, allowing students to align the design with their personal brand. Additionally, students can preview templates before applying them, ensuring the final design matches their preferences and looks great across all devices.
 
 [links to related code files (github)] 
+
 src/css/template1.css 
 
 src/css/template2.css 
@@ -175,8 +184,12 @@ https://shell.hamk.fi/~amk1001863/web_programming_project_g3/src/
 
 https://shell.hamk.fi/~amk1001864/web_programming_project_g3/src/
 
+https://shell.hamk.fi/~amk1001933/web_programming_project_g3/src/ 
 
-Feature 4 - Portfolio Display (Vindya Nukulasooriya)
+https://shell.hamk.fi/~amk1004093/web_programming_project_g3/src/
+
+
+## Feature 4 - Portfolio Display (Vindya Nukulasooriya)
 
 When displaying the portfolio, the content is organized into clear, easy-to-navigate sections, ensuring a professional and user-friendly presentation. Each section—such as personal information, experience, skills, education, projects, and references—is neatly arranged with relevant details, and users can access or edit them as needed. This allows students to effectively showcase their achievements, making it easy for viewers to understand their qualifications and expertise. The layout is customizable, with five different template options to choose from, and is designed to be visually appealing and responsive, ensuring the portfolio looks great on both desktop and mobile devices.
 
@@ -190,8 +203,13 @@ src/portfolio.php
 
 https://shell.hamk.fi/~amk1001863/web_programming_project_g3/src/
 
+https://shell.hamk.fi/~amk1001864/web_programming_project_g3/src/
 
-Feature 5 - Contacts Submission (Ravidu Wijesekara)
+https://shell.hamk.fi/~amk1001933/web_programming_project_g3/src/ 
+
+https://shell.hamk.fi/~amk1004093/web_programming_project_g3/src/
+
+## Feature 5 - Contacts Submission (Ravidu Wijesekara)
 
 In this contact.php page, students can submit their inquiries or feedback through a contact form. They are required to provide their name, email address, and a message. Upon successful submission, the form data is stored in a database, and a confirmation message is displayed to notify the user that their message has been sent. The form is also reset after submission, ensuring a smooth user experience. This functionality allows students to easily reach out for support or make inquiries related to their portfolio or other academic matters.
 
@@ -201,10 +219,15 @@ src/css/contact.css
 
 [link to the feature (shell.hamk.fi)]
 
-https://shell.hamk.fi/~amk1001933/web_programming_project_g3/src/
+https://shell.hamk.fi/~amk1001863/web_programming_project_g3/src/
 
+https://shell.hamk.fi/~amk1001864/web_programming_project_g3/src/
 
-Feature 6 - Preparation of ReadMe Document (Vindya Nukulasooriya, Charith Kaushalya, Ravidu Wijesekara )
+https://shell.hamk.fi/~amk1001933/web_programming_project_g3/src/ 
+
+https://shell.hamk.fi/~amk1004093/web_programming_project_g3/src/
+
+## Feature 6 - Preparation of ReadMe Document (Vindya Nukulasooriya, Charith Kaushalya, Ravidu Wijesekara )
 
 This README document outlines the purpose, features, and development progress of the JRAVICH Student Portfolio Builder project. It provides a detailed overview of key functionalities such as account creation, content upload, customizable portfolio templates, and the ability to display a professional portfolio. The document also tracks the project's progress by listing the features, database tables, created forms, and tables, with links to related code and live demos. It serves as a comprehensive guide for both developers and users, ensuring clarity and effective collaboration throughout the project's lifecycle.
 
@@ -214,29 +237,27 @@ This README document outlines the purpose, features, and development progress of
 
 N/A
 
-
-
 ---
 
 ## Database Tables
 
 The list of the database tables that are part of the JRAVICH Student Portfolio Builder Project are as follows: 
 
-- Table 1 (Janaka Alwis): users table
+- Table 1 (Janaka Alwis): **users table**
   
-- Table 2 (Janaka Alwis): experience table
+- Table 2 (Janaka Alwis): **experience table**
 - 
-- Table 3 (Vindya Nukulasooriya): skills table
+- Table 3 (Vindya Nukulasooriya): **skills table**
   
-- Table 4 (Vindya Nukulasooriya): master_templates table
+- Table 4 (Vindya Nukulasooriya): **master_templates table**
 - 
-- Table 5 (Charith Kaushalya): education table
+- Table 5 (Charith Kaushalya): **education table**
   
-- Table 6 (Charith Kaushalya): projects table
+- Table 6 (Charith Kaushalya): **projects table**
   
-- Table 7 (Ravidu Wijesekara): user_references table
+- Table 7 (Ravidu Wijesekara): **user_references table**
   
-- Table 8 (Ravidu Wijesekara): contact_messages table
+- Table 8 (Ravidu Wijesekara): **contact_messages table**
 
 ## ER Diagram of the Database
 
@@ -255,12 +276,20 @@ The sign up form collects basic information to create a user account, including 
 Link to the related code file (github)
 
 src/home.php
+
 src/index.php
 
 Link to the form (shell.hamk.fi)
 
+https://shell.hamk.fi/~amk1001863/web_programming_project_g3/src/
+
+https://shell.hamk.fi/~amk1001864/web_programming_project_g3/src/
+
+https://shell.hamk.fi/~amk1001933/web_programming_project_g3/src/ 
+
 https://shell.hamk.fi/~amk1004093/web_programming_project_g3/src/
-Validations Applied 
+
+**Validations Applied** 
 
 First Name - Required Field Validation applied.
 
@@ -280,17 +309,21 @@ src/home.php
 
 src/index.php
 
-
 Link to the form (shell.hamk.fi)
+
+https://shell.hamk.fi/~amk1001863/web_programming_project_g3/src/
+
+https://shell.hamk.fi/~amk1001864/web_programming_project_g3/src/
+
+https://shell.hamk.fi/~amk1001933/web_programming_project_g3/src/ 
 
 https://shell.hamk.fi/~amk1004093/web_programming_project_g3/src/
 
-Validations Applied 
+**Validations Applied** 
 
 Email - Email Validation applied.
 
 Password - Required Field Validation applied.
-
 
 ### Form 3 (Janaka Alwis): Personal Information
 
@@ -304,9 +337,15 @@ src/editor.php
 
 Link to the form (shell.hamk.fi)
 
+https://shell.hamk.fi/~amk1001863/web_programming_project_g3/src/
+
+https://shell.hamk.fi/~amk1001864/web_programming_project_g3/src/
+
+https://shell.hamk.fi/~amk1001933/web_programming_project_g3/src/ 
+
 https://shell.hamk.fi/~amk1004093/web_programming_project_g3/src/
 
-Validations Applied 
+**Validations Applied** 
 
 First Name - Required Field Validation applied.
 
@@ -322,7 +361,6 @@ Profile Image – File Validation applied.
 
 LinkedIn URL – URL Validation applied.
 
-
 ### Form 4 (Janaka Alwis): Experience
 
 The Experience form provides logged-in users with the ability to update various details associated with their account, such as their Job Title, Employer, Job Description, Start Date, End Date & City. 
@@ -335,9 +373,15 @@ src/editor.php
 
 Link to the form (shell.hamk.fi)
 
+https://shell.hamk.fi/~amk1001863/web_programming_project_g3/src/
+
+https://shell.hamk.fi/~amk1001864/web_programming_project_g3/src/
+
+https://shell.hamk.fi/~amk1001933/web_programming_project_g3/src/ 
+
 https://shell.hamk.fi/~amk1004093/web_programming_project_g3/src/
 
-Validations Applied 
+**Validations Applied** 
 
 Job Title - Required Field Validation applied.
 
@@ -348,7 +392,6 @@ Start Date - Required Field Validation applied.
 End Date – Required Field Validation applied.
 
 Dynamic Experience – Dynamic Field Addition, Confirmation Before Deletion
-
  
 ### Form 5 (Vindya Nukulasooriya): Skills
 
@@ -364,7 +407,13 @@ Link to the form (shell.hamk.fi)
 
 https://shell.hamk.fi/~amk1001863/web_programming_project_g3/src/
 
-Validations Applied 
+https://shell.hamk.fi/~amk1001864/web_programming_project_g3/src/
+
+https://shell.hamk.fi/~amk1001933/web_programming_project_g3/src/ 
+
+https://shell.hamk.fi/~amk1004093/web_programming_project_g3/src/
+
+**Validations Applied** 
 
 Skill Name - Required Field Validation applied.
 
@@ -374,11 +423,9 @@ Dynamic Skill Section – Dynamic Field Addition
 
 Skill Deletion with Confirmation – Confirmation Before Deletion
 
-
 ### Form 6 (Charith Kaushalya): Education
 
 The Education form provides logged-in users with the ability to update various details associated with their education background, such as the Institution, Field of Study, Qualification, Graduation Year & Description.
-
 
 Link to the related code file (github)
 
@@ -388,9 +435,15 @@ src/editor.php
 
 Link to the form (shell.hamk.fi)
 
+https://shell.hamk.fi/~amk1001863/web_programming_project_g3/src/
+
 https://shell.hamk.fi/~amk1001864/web_programming_project_g3/src/
 
-Validations Applied 
+https://shell.hamk.fi/~amk1001933/web_programming_project_g3/src/ 
+
+https://shell.hamk.fi/~amk1004093/web_programming_project_g3/src/
+
+**Validations Applied** 
 
 Institution - Required Field Validation applied.
 
@@ -401,7 +454,6 @@ Graduation Year – Required Field Validation & Number Validation applied.
 Description – Confirmation Before Deletion
 
 Education Deletion with Confirmation – Confirmation Before Deletion
-
 
 ### Form 7 (Charith Kaushalya): Projects
 
@@ -415,14 +467,19 @@ src/editor.php
 
 Link to the form (shell.hamk.fi)
 
+https://shell.hamk.fi/~amk1001863/web_programming_project_g3/src/
+
 https://shell.hamk.fi/~amk1001864/web_programming_project_g3/src/
 
-Validations Applied 
+https://shell.hamk.fi/~amk1001933/web_programming_project_g3/src/ 
+
+https://shell.hamk.fi/~amk1004093/web_programming_project_g3/src/
+
+**Validations Applied** 
 
 Project Name - Required Field Validation applied.
 
 Project Deletion with Confirmation – Confirmation Before Deletion
-
 
 ### Form 8 (Ravidu Wijesekara): References
 
@@ -436,14 +493,19 @@ src/editor.php
 
 Link to the form (shell.hamk.fi)
 
+https://shell.hamk.fi/~amk1001863/web_programming_project_g3/src/
+
 https://shell.hamk.fi/~amk1001864/web_programming_project_g3/src/
 
-Validations Applied 
+https://shell.hamk.fi/~amk1001933/web_programming_project_g3/src/ 
+
+https://shell.hamk.fi/~amk1004093/web_programming_project_g3/src/
+
+**Validations Applied** 
 
 Project Name - Required Field Validation applied.
 
 Project Deletion with Confirmation – Confirmation Before Deletion
-
 
 ### Form 9 (Ravidu Wijesekara): Get in Touch
 
@@ -455,16 +517,21 @@ src/contact.php
 
 Link to the form (shell.hamk.fi)
 
-https://shell.hamk.fi/~amk1001933/web_programming_project_g3/src 
+https://shell.hamk.fi/~amk1001863/web_programming_project_g3/src/
 
-Validations Applied 
+https://shell.hamk.fi/~amk1001864/web_programming_project_g3/src/
+
+https://shell.hamk.fi/~amk1001933/web_programming_project_g3/src/ 
+
+https://shell.hamk.fi/~amk1004093/web_programming_project_g3/src/
+
+**Validations Applied** 
 
 Name - Required Field Validation applied.
 
 Email - Required Field Validation  & Email Validation applied.
 
 Message - Required Field Validation applied.
-
 
 ---
 
@@ -496,6 +563,12 @@ src/logout.php
 
 Link to the table (shell.hamk.fi)
 
+https://shell.hamk.fi/~amk1001863/web_programming_project_g3/src/
+
+https://shell.hamk.fi/~amk1001864/web_programming_project_g3/src/
+
+https://shell.hamk.fi/~amk1001933/web_programming_project_g3/src/ 
+
 https://shell.hamk.fi/~amk1004093/web_programming_project_g3/src/
 
 ### Table 2 (Janaka Alwis): experience table 
@@ -519,6 +592,12 @@ src/editor.php
 src/css/editor.css
 
 Link to the table (shell.hamk.fi)
+
+https://shell.hamk.fi/~amk1001863/web_programming_project_g3/src/
+
+https://shell.hamk.fi/~amk1001864/web_programming_project_g3/src/
+
+https://shell.hamk.fi/~amk1001933/web_programming_project_g3/src/ 
 
 https://shell.hamk.fi/~amk1004093/web_programming_project_g3/src/
 
@@ -545,6 +624,12 @@ src/css/editor.css
 Link to the table (shell.hamk.fi)
 
 https://shell.hamk.fi/~amk1001863/web_programming_project_g3/src/
+
+https://shell.hamk.fi/~amk1001864/web_programming_project_g3/src/
+
+https://shell.hamk.fi/~amk1001933/web_programming_project_g3/src/ 
+
+https://shell.hamk.fi/~amk1004093/web_programming_project_g3/src/
 
 ### Table 4 (Vindya Nukulasooriya): master_templates table
 
@@ -578,6 +663,12 @@ Link to the table (shell.hamk.fi)
 
 https://shell.hamk.fi/~amk1001863/web_programming_project_g3/src/
 
+https://shell.hamk.fi/~amk1001864/web_programming_project_g3/src/
+
+https://shell.hamk.fi/~amk1001933/web_programming_project_g3/src/ 
+
+https://shell.hamk.fi/~amk1004093/web_programming_project_g3/src/
+
 ### Table 5 (Charith Kaushalya): education table 
 
 src/db.php
@@ -598,7 +689,13 @@ src/css/editor.css
 
 Link to the table (shell.hamk.fi)
 
+https://shell.hamk.fi/~amk1001863/web_programming_project_g3/src/
+
 https://shell.hamk.fi/~amk1001864/web_programming_project_g3/src/
+
+https://shell.hamk.fi/~amk1001933/web_programming_project_g3/src/ 
+
+https://shell.hamk.fi/~amk1004093/web_programming_project_g3/src/
 
 ### Table 6 (Charith Kaushalya): projects table 
 
@@ -620,7 +717,13 @@ src/css/editor.css
 
 Link to the table (shell.hamk.fi)
 
+https://shell.hamk.fi/~amk1001863/web_programming_project_g3/src/
+
 https://shell.hamk.fi/~amk1001864/web_programming_project_g3/src/
+
+https://shell.hamk.fi/~amk1001933/web_programming_project_g3/src/ 
+
+https://shell.hamk.fi/~amk1004093/web_programming_project_g3/src/
 
 ### Table 7 (Ravidu Wijesekara): user_references table
 
@@ -642,7 +745,13 @@ src/css/editor.css
 
 Link to the table (shell.hamk.fi)
 
-https://shell.hamk.fi/~amk1001933/web_programming_project_g3/src/
+https://shell.hamk.fi/~amk1001863/web_programming_project_g3/src/
+
+https://shell.hamk.fi/~amk1001864/web_programming_project_g3/src/
+
+https://shell.hamk.fi/~amk1001933/web_programming_project_g3/src/ 
+
+https://shell.hamk.fi/~amk1004093/web_programming_project_g3/src/
 
 ### Table 8 (Ravidu Wijesekara): contact_messages table 
 
@@ -662,8 +771,13 @@ src/css/contact.css
 
 Link to the table (shell.hamk.fi)
 
-https://shell.hamk.fi/~amk1001933/web_programming_project_g3/src/
+https://shell.hamk.fi/~amk1001863/web_programming_project_g3/src/
 
+https://shell.hamk.fi/~amk1001864/web_programming_project_g3/src/
+
+https://shell.hamk.fi/~amk1001933/web_programming_project_g3/src/ 
+
+https://shell.hamk.fi/~amk1004093/web_programming_project_g3/src/
 
 ---
 
