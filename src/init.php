@@ -1,7 +1,6 @@
 <?php
-// init.php
 ob_start();
-// Start session on every page
+// Start session on every page, check whether session is started.
 if (session_status() === PHP_SESSION_NONE) {
     session_start();
 }
@@ -9,5 +8,4 @@ if (session_status() === PHP_SESSION_NONE) {
 // Include the database connection file
 require_once 'db.php';
 
-// Optionally, you can include other common configuration settings here.
 

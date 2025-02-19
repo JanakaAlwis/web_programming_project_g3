@@ -1,8 +1,28 @@
 <?php
-ob_start();
+//ob_start();
 require 'init.php';
 //session_start();
 //require 'db.php';
+
+// sign up
+if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['signup'])) {
+    // Sanitize inputs
+    $first_name = $conn->real_escape_string($_POST['first_name']);
+    $last_name  = $conn->real_escape_string($_POST['last_name']);
+    $email      = $conn->real_escape_string($_POST['email']);
+    $password   = password_hash($_POST['password'], PASSWORD_DEFAULT);
+
+    // Insert into database
+    $sql = "INSERT INTO users (first_name, last_name, email, password_hash, template_id) 
+            VALUES ('$first_name', '$last_name', '$email', '$password', 1)";
+
+    if ($conn->query($sql) === TRUE) {
+        header("Location: index.php?registered=1");
+        exit();
+    } else {
+        $error = "Error: " . $conn->error;
+    }
+}
 
 // Login
 if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['login'])) {
@@ -28,27 +48,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['login'])) {
     }
 }
 
-// sign up
-if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['signup'])) {
-    // Sanitize inputs
-    $first_name = $conn->real_escape_string($_POST['first_name']);
-    $last_name  = $conn->real_escape_string($_POST['last_name']);
-    $email      = $conn->real_escape_string($_POST['email']);
-    $password   = password_hash($_POST['password'], PASSWORD_DEFAULT);
-
-    // Insert into database
-    $sql = "INSERT INTO users (first_name, last_name, email, password_hash, template_id) 
-            VALUES ('$first_name', '$last_name', '$email', '$password', 1)";
-
-    if ($conn->query($sql) === TRUE) {
-        header("Location: index.php?registered=1");
-        exit();
-    } else {
-        $error = "Error: " . $conn->error;
-    }
-}
-
-ob_end_flush();
+//ob_end_flush();
 
 // Page metadata
 $pageTitle = "Index";

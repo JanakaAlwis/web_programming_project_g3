@@ -16,6 +16,7 @@
 <!-- Header Section -->
 <header class="bg-dark text-white py-3">
     <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between">
+        <!-- Show Logo only if the page is home.php -->
         <?php if ($pageTitle == "Home") : ?>
             <img src="images/jravich.png" alt="PortfolioBuilder" width="150" height="80" class="mb-3 mb-md-0 me-3"> 
         <?php endif; ?>

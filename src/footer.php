@@ -8,4 +8,7 @@
     </p>
 </footer>
 
-<?php ob_end_flush(); ?>
+<?php 
+// ensures all content is properly sent to the browser after buffering.
+ob_end_flush(); 
+?>
